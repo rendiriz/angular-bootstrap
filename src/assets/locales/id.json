@@ -1,0 +1,23 @@
+{
+  "ROUTES.404": "404",
+  "ROUTES.home": "beranda",
+  "ROUTES.components": "komponen",
+  "ROUTES.foundations": "dasar",
+  "home": "Beranda",
+  "components": "Komponen",
+  "foundations": "Dasar",
+  "seo": {
+    "home-page": {
+      "title": "Ini Judul",
+      "description": "Ini Deskripsi"
+    },
+    "foundations-page": {
+      "title": "Dasar",
+      "description": "Deskripsi Dasar"
+    },
+    "components-page": {
+      "title": "Komponen",
+      "description": "Deskripsi Komponen"
+    }
+  }
+}

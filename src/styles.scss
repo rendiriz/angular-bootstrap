@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,500,600,700,800,900');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+// BODY
+$body-bg: #ffffff;
+$body-color: #424242;
+
+// FONT
+$font-family-base: 'Roboto';
+$font-size-base: 0.875rem;
+
+// HEADING
+$headings-font-family: 'Lora';
+$headings-font-weight: 'bold';
+$headings-color: #000000;
+
+// BUTTON
+$btn-padding-y: 10px;
+$btn-padding-x: 16px;
+$btn-font-family: 'Lato';
+$btn-font-size: 14px;
+$btn-line-height: 18px;
+
+$btn-padding-y-sm: 10px;
+$btn-padding-x-sm: 16px;
+
+$btn-padding-y-lg: 10px;
+$btn-padding-x-lg: 16px;
+
+$btn-border-radius: 8px;
+$btn-border-radius-sm: 8px;
+$btn-border-radius-lg: 8px;
+
+// CORE
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+// PACKAGES
+@import '~placeholder-loading/src/scss/placeholder-loading.scss';

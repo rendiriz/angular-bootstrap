@@ -1,0 +1,42 @@
+<section class="public-navbar mb-3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand"
+         [routerLink]="['/' | localize]">
+        Angular Bootstrap
+      </a>
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              (click)="isMenuCollapsed = !isMenuCollapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div [ngbCollapse]="isMenuCollapsed"
+           class="collapse navbar-collapse"
+           id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"
+               [routerLinkActive]="['active']"
+               [routerLink]="['/foundations' | localize]"
+               (click)="isMenuCollapsed = true">
+              {{ 'foundations' | translate }}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+               [routerLinkActive]="['active']"
+               [routerLink]="['/components' | localize]"
+               (click)="isMenuCollapsed = true">
+              {{ 'components' | translate }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
