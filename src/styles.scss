@@ -3,18 +3,39 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,500,600,700,800,900');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 
+// CORE
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/buttons';
+
 // BODY
 $body-bg: #ffffff;
-$body-color: #424242;
+$body-color:#424242;
 
 // FONT
+.font-roboto {
+  font-family: 'Roboto' !important;
+}
+
+.font-lato {
+  font-family: 'Lato' !important;
+}
+
+.font-lora {
+  font-family: 'Lora' !important;
+}
+
 $font-family-base: 'Roboto';
-$font-size-base: 0.875rem;
+$font-size-base: 1rem;
+
+// COLOR
+@import 'assets/css/color.scss';
 
 // HEADING
 $headings-font-family: 'Lora';
 $headings-font-weight: 'bold';
-$headings-color: #000000;
+$headings-color: #212121;
 
 // BUTTON
 $btn-padding-y: 10px;
@@ -23,21 +44,64 @@ $btn-font-family: 'Lato';
 $btn-font-size: 14px;
 $btn-line-height: 18px;
 
-$btn-padding-y-sm: 10px;
-$btn-padding-x-sm: 16px;
+$btn-padding-y-sm: 8px;
+$btn-padding-x-sm: 14px;
+$btn-font-size-sm: 12px;
 
-$btn-padding-y-lg: 10px;
-$btn-padding-x-lg: 16px;
+$btn-padding-y-lg: 12px;
+$btn-padding-x-lg: 18px;
+$btn-font-size-lg: 16px;
 
 $btn-border-radius: 8px;
 $btn-border-radius-sm: 8px;
 $btn-border-radius-lg: 8px;
 
+// TEXT FIELD
+$input-padding-y: 10px;
+$input-padding-x: 8px;
+$input-font-family: 'Lato';
+$input-font-size: 14px;
+$input-font-weight: normal;
+$input-line-height: 16px;
+
+$input-padding-y-sm: 8px;
+$input-padding-x-sm: 6px;
+$input-font-size-sm: 12px;
+
+$input-padding-y-lg: 12px;
+$input-padding-x-lg: 10px;
+$input-font-size-lg: 16px;
+
+$input-bg: $gray-50;
+$input-disabled-bg: $gray-200;
+$input-disabled-border-color: null;
+
+$input-color: $gray-800;
+$input-border-color: $gray-400;
+$input-border-width: $input-btn-border-width;
+$input-box-shadow: $box-shadow-inset;
+
+$input-border-radius: 8px;
+$input-border-radius-sm: 8px;
+$input-border-radius-lg: 8px;
+
+$input-placeholder-color: $gray-600;
+$input-plaintext-color: $gray-50;
+
+.form-label {
+  font-family: 'Lato' !important;
+  line-height: 13px !important;
+}
+
+$form-label-margin-bottom: .5rem;
+$form-label-font-size: 15px;
+$form-label-color: $gray-800;
+
 // CORE
 @import '~bootstrap/scss/bootstrap';
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
+
+// ADDITIONAL
+@import 'assets/css/sizing.scss';
 
 // PACKAGES
 @import '~placeholder-loading/src/scss/placeholder-loading.scss';

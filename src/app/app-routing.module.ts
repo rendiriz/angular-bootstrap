@@ -17,6 +17,10 @@ export const AppRoutingModule: Routes = [
         loadChildren: () => import('./views/home/home.module').then((m) => m.HomeModule),
       },
       {
+        path: 'foundations',
+        loadChildren: () => import('./views/foundations/foundations.module').then((m) => m.FoundationsModule),
+      },
+      {
         path: 'components',
         loadChildren: () => import('./views/components/components.module').then((m) => m.ComponentsModule),
       },

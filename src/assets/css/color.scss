@@ -1,0 +1,199 @@
+$min-contrast-ratio: 2.5;
+
+$yellow-50: #FFF9E1;
+$yellow-100: #FFEEB4;
+$yellow-200: #FFE483;
+$yellow-300: #FFDA4F;
+$yellow-400: #FFD026;
+$yellow-500: #FFC800;
+$yellow-600: #FFB900;
+$yellow-700: #FFA600;
+$yellow-800: #FF9500;
+$yellow-900: #FF7500;
+
+$green-50: #E6F6EC;
+$green-100: #C3E9D0;
+$green-200: #9BDBB3;
+$green-300: #70CD94;
+$green-400: #4DC27E;
+$green-500: #1FB767;
+$green-600: #16A75C;
+$green-700: #069550;
+$green-800: #008444;
+$green-900: #006430;
+
+$blue-50: #E3F2FD;
+$blue-100: #BBDEFB;
+$blue-200: #90CAF9;
+$blue-300: #64B5F6;
+$blue-400: #42A5F5;
+$blue-500: #2196F3;
+$blue-600: #1E88E5;
+$blue-700: #1976D2;
+$blue-800: #1565C0;
+$blue-900: #0D47A1;
+
+$pink-50: #FFE6EC;
+$pink-100: #FFBFCF;
+$pink-200: #FF96AF;
+$pink-300: #FF6C8F;
+$pink-400: #FF4D77;
+$pink-500: #FD355F;
+$pink-600: #EC305D;
+$pink-700: #D62A59;
+$pink-800: #C12357;
+$pink-900: #9D1951;
+
+$red-50: #FFEBEE;
+$red-100: #FFCDD2;
+$red-200: #EF9A9A;
+$red-300: #E57373;
+$red-400: #EF5350;
+$red-500: #F44336;
+$red-600: #E53935;
+$red-700: #D32F2F;
+$red-800: #C62828;
+$red-900: #B71B1C;
+
+$purple-50: #F3E5F5;
+$purple-100: #E1BEE7;
+$purple-200: #CE93D8;
+$purple-300: #BA68C8;
+$purple-400: #AB47BC;
+$purple-500: #9B27B0;
+$purple-600: #8D24AA;
+$purple-700: #7A1FA2;
+$purple-800: #691B9A;
+$purple-900: #49148C;
+
+$gray-50: #FAFAFA;
+$gray-100: #F5F5F5;
+$gray-200: #EEEEEE;
+$gray-300: #E0E0E0;
+$gray-400: #BDBDBD;
+$gray-500: #9E9E9E;
+$gray-600: #757575;
+$gray-700: #616161;
+$gray-800: #424242;
+$gray-900: #212121;
+
+$blue-gray-50: #E3E7ED;
+$blue-gray-100: #B9C3D3;
+$blue-gray-200: #8D9DB5;
+$blue-gray-300: #627798;
+$blue-gray-400: #415C84;
+$blue-gray-500: #1A4373;
+$blue-gray-600: #133C6B;
+$blue-gray-700: #083461;
+$blue-gray-800: #022B55;
+$blue-gray-900: #001B3D;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $red-700,
+  "light": $light,
+  "dark": $dark,
+  "white": $white,
+  "black": $black,
+  "transparent": transparent,
+  // YELLOW
+  "yellow": $yellow-400,
+  "yellow-50": $yellow-50,
+  "yellow-100": $yellow-100,
+  "yellow-200": $yellow-200,
+  "yellow-300": $yellow-300,
+  "yellow-400": $yellow-400,
+  "yellow-500": $yellow-500,
+  "yellow-600": $yellow-600,
+  "yellow-700": $yellow-700,
+  "yellow-800": $yellow-800,
+  "yellow-900": $yellow-900,
+  // GREEN
+  "green": $green-600,
+  "green-50": $green-50,
+  "green-100": $green-100,
+  "green-200": $green-200,
+  "green-300": $green-300,
+  "green-400": $green-400,
+  "green-500": $green-500,
+  "green-600": $green-600,
+  "green-700": $green-700,
+  "green-800": $green-800,
+  "green-900": $green-900,
+  // BLUE
+  "blue": $blue-600,
+  "blue-50": $blue-50,
+  "blue-100": $blue-100,
+  "blue-200": $blue-200,
+  "blue-300": $blue-300,
+  "blue-400": $blue-400,
+  "blue-500": $blue-500,
+  "blue-600": $blue-600,
+  "blue-700": $blue-700,
+  "blue-800": $blue-800,
+  "blue-900": $blue-900,
+  // PINK
+  "pink": $pink-400,
+  "pink-50": $pink-50,
+  "pink-100": $pink-100,
+  "pink-200": $pink-200,
+  "pink-300": $pink-300,
+  "pink-400": $pink-400,
+  "pink-500": $pink-500,
+  "pink-600": $pink-600,
+  "pink-700": $pink-700,
+  "pink-800": $pink-800,
+  "pink-900": $pink-900,
+  // RED
+  "red": $red-500,
+  "red-50": $red-50,
+  "red-100": $red-100,
+  "red-200": $red-200,
+  "red-300": $red-300,
+  "red-400": $red-400,
+  "red-500": $red-500,
+  "red-600": $red-600,
+  "red-700": $red-700,
+  "red-800": $red-800,
+  "red-900": $red-900,
+  // PURPLE
+  "purple": $purple-400,
+  "purple-50": $purple-50,
+  "purple-100": $purple-100,
+  "purple-200": $purple-200,
+  "purple-300": $purple-300,
+  "purple-400": $purple-400,
+  "purple-500": $purple-500,
+  "purple-600": $purple-600,
+  "purple-700": $purple-700,
+  "purple-800": $purple-800,
+  "purple-900": $purple-900,
+  // GRAY
+  "gray": $gray-900,
+  "gray-50": $gray-50,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+  // BLUE GRAY
+  "blue-gray": $blue-gray-900,
+  "blue-gray-50": $blue-gray-50,
+  "blue-gray-100": $blue-gray-100,
+  "blue-gray-200": $blue-gray-200,
+  "blue-gray-300": $blue-gray-300,
+  "blue-gray-400": $blue-gray-400,
+  "blue-gray-500": $blue-gray-500,
+  "blue-gray-600": $blue-gray-600,
+  "blue-gray-700": $blue-gray-700,
+  "blue-gray-800": $blue-gray-800,
+  "blue-gray-900": $blue-gray-900,
+);

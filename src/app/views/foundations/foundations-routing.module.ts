@@ -9,16 +9,16 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () =>
-          import('./components-page/components-page.module').then((m) => m.ComponentsPageModule),
+          import('./foundations-page/foundations-page.module').then((m) => m.FoundationsPageModule),
       },
       {
-        path: 'button',
-        loadChildren: () => import('./button-page/button-page.module').then((m) => m.ButtonPageModule),
+        path: 'color',
+        loadChildren: () => import('./color-page/color-page.module').then((m) => m.ColorPageModule),
       },
       {
-        path: 'textfield',
+        path: 'typography',
         loadChildren: () =>
-          import('./textfield-page/textfield-page.module').then((m) => m.TextfieldPageModule),
+          import('./typography-page/typography-page.module').then((m) => m.TypographyPageModule),
       },
     ],
   },
@@ -28,4 +28,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes), LocalizeRouterModule.forChild(routes)],
   exports: [RouterModule, LocalizeRouterModule],
 })
-export class ComponentsRoutingModule {}
+export class FoundationsRoutingModule {}

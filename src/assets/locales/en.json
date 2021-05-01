@@ -1,11 +1,14 @@
 {
   "ROUTES.404": "404",
   "ROUTES.home": "home",
-  "ROUTES.components": "components",
   "ROUTES.foundations": "foundations",
+  "ROUTES.color": "color",
+  "ROUTES.typography": "typography",
+  "ROUTES.components": "components",
   "home": "Home",
-  "components": "Components",
   "foundations": "Foundations",
+  "color": "Color",
+  "components": "Components",
   "seo": {
     "home-page": {
       "title": "This Description",
@@ -14,6 +17,10 @@
     "foundations-page": {
       "title": "Foundations",
       "description": "Foundations Description"
+    },
+    "color-page": {
+      "title": "Color",
+      "description": "Color Description"
     },
     "components-page": {
       "title": "Components",

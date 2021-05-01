@@ -1,4 +1,4 @@
-<section class="components-page">
+<section class="foundations-page">
   <div class="container-fluid">
     <div class="header my-5">
       <h1>{{ label }}</h1>
@@ -12,23 +12,23 @@
         <div class="col">
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title">Button</h5>
+              <h5 class="card-title">{{ 'color' | translate }}</h5>
               <p class="card-text">
-                A button triggers an event or action. They let users know what will happen next.
+                Color distinguishes our brand and helps us create consistent experiences across products.
               </p>
-              <a [routerLink]="['/components/button' | localize]">More</a>
+              <a [routerLink]="['/foundations/color' | localize]">More</a>
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title">Text field</h5>
+              <h5 class="card-title">Typography</h5>
               <p class="card-text">
-                A text field is an input that allows a user to write or edit text.
+                Typography is our system of fonts. Each font conveys the appropriate sentiment to assist our
+                users through each stage of their journey.
               </p>
-              <a [routerLink]="['/components/textfield' | localize]">More</a>
+              <a [routerLink]="['/foundations/typography' | localize]">More</a>
             </div>
           </div>
         </div>

@@ -1,23 +1,47 @@
 {
   "ROUTES.404": "404",
-  "ROUTES.home": "beranda",
-  "ROUTES.components": "komponen",
-  "ROUTES.foundations": "dasar",
-  "home": "Beranda",
-  "components": "Komponen",
-  "foundations": "Dasar",
+  "ROUTES.home": "home",
+  "ROUTES.foundations": "foundations",
+  "ROUTES.color": "color",
+  "ROUTES.typography": "typography",
+  "ROUTES.components": "components",
+  "ROUTES.button": "button",
+  "ROUTES.textfield": "textfield",
+  "home": "Home",
+  "foundations": "Foundations",
+  "color": "Color",
+  "typography": "Typography",
+  "components": "Components",
+  "button": "Button",
+  "textfield": "Text field",
   "seo": {
     "home-page": {
-      "title": "Ini Judul",
-      "description": "Ini Deskripsi"
+      "title": "Home",
+      "description": "Description Home"
     },
     "foundations-page": {
-      "title": "Dasar",
-      "description": "Deskripsi Dasar"
+      "title": "Foundations",
+      "description": "Foundations are the visual elements needed to create engaging end-to-end user experiences. This includes guidance on iconography, typography, layout and structure."
+    },
+    "color-page": {
+      "title": "Color",
+      "description": "Color distinguishes our brand and helps us create consistent experiences across products."
+    },
+    "typography-page": {
+      "title": "Typography",
+      "description": "Typography is our system of fonts. Each font conveys the appropriate sentiment to assist our users through each stage of their journey."
     },
     "components-page": {
-      "title": "Komponen",
-      "description": "Deskripsi Komponen"
+      "title": "Components",
+      "description": "Components are the reusable building blocks of our design system. Each component meets a specific interaction or UI need, and has been specifically created to work together to create patterns and intuitive user experiences."
+    },
+    "button-page": {
+      "title": "Button",
+      "description": "A button triggers an event or action. They let users know what will happen next."
+    },
+    "textfield-page": {
+      "title": "Text field",
+      "description": "A text field is an input that allows a user to write or edit text."
     }
   }
 }
