@@ -6,6 +6,10 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LocalizeRouterModule } from '@gilsdav/ngx-translate-router';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { HighlightJsModule } from 'ngx-highlight-js';
+
+// COMPONENT
+import { PageComponent as HeaderPageComponent } from '@components/header/page/page.component';
 
 @NgModule({
   imports: [
@@ -15,14 +19,21 @@ import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
     TranslateModule,
     LocalizeRouterModule,
     LoadingBarRouterModule,
+    HighlightJsModule,
   ],
-  declarations: [],
+  declarations: [
+    // COMPONENT
+    HeaderPageComponent,
+  ],
   exports: [
     RouterModule,
     // PACKAGE
     TranslateModule,
     LocalizeRouterModule,
     LoadingBarRouterModule,
+    HighlightJsModule,
+    // COMPONENT
+    HeaderPageComponent,
   ],
   providers: [],
 })

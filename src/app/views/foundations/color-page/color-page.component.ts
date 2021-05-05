@@ -34,6 +34,15 @@ export class ColorPageComponent implements OnInit, OnChanges, OnDestroy, AfterVi
   description!: string;
   breadcrumb!: any[];
 
+  // Variable
+  codeBackground = `<div class="p-3 mb-2 bg-yellow text-black">.bg-yellow</div>
+<div class="p-3 mb-2 bg-green text-white">.bg-green</div>
+<div class="p-3 mb-2 bg-blue text-white">.bg-blue</div>`;
+
+  codeColor = `<p class="text-yellow">.text-yellow</p>
+<p class="text-green">.text-green</p>
+<p class="text-blue">.text-blue</p>`;
+
   constructor(
     private cdRef: ChangeDetectorRef,
     private router: Router,

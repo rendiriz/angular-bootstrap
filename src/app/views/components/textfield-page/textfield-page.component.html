@@ -1,34 +1,34 @@
 <section class="textfield-page">
+  <app-header-page [label]="label"
+                   [description]="description"></app-header-page>
+
   <div class="container-fluid">
-    <div class="header my-5">
-      <h1>{{ label }}</h1>
-      <p>{{ description }}</p>
-    </div>
-
-    <hr>
-
     <div class="my-5">
-      <div class="rounded border border-gray-300 p-4">
+      <div class="border border-gray-300 rounded-top p-4">
         <div class="mb-3">
           <label class="form-label">Name</label>
           <input type="email"
                  class="form-control"
                  placeholder="Placeholder Name">
         </div>
-        <div class="mb-3">
+        <div class="mb-0">
           <label class="form-label">Description</label>
           <textarea class="form-control"
                     rows="3"
                     placeholder="Placeholder Description"></textarea>
         </div>
       </div>
+      <textarea highlight-js
+                [lang]="'html'">
+        {{ codeTextfield }}
+      </textarea>
     </div>
 
     <hr>
 
     <div class="my-5">
-      <h2>Sizing</h2>
-      <div class="rounded border border-gray-300 p-4">
+      <h2 class="mb-3">Sizing</h2>
+      <div class="border border-gray-300 rounded-top p-4">
         <div class="mb-3">
           <input class="form-control form-control-lg"
                  type="text"
@@ -39,26 +39,30 @@
                  type="text"
                  placeholder="Default input">
         </div>
-        <div class="mb-3">
+        <div class="mb-0">
           <input class="form-control form-control-sm"
                  type="text"
                  placeholder=".form-control-sm">
         </div>
       </div>
+      <textarea highlight-js
+                [lang]="'html'">
+        {{ codeSize }}
+      </textarea>
     </div>
 
     <hr>
 
     <div class="my-5">
-      <h2>Disabled</h2>
-      <div class="rounded border border-gray-300 p-4">
+      <h2 class="mb-3">Disabled</h2>
+      <div class="border border-gray-300 rounded-top p-4">
         <div class="mb-3">
           <input class="form-control"
                  type="text"
                  placeholder="Disabled input"
                  disabled>
         </div>
-        <div class="mb-3">
+        <div class="mb-0">
           <input class="form-control"
                  type="text"
                  placeholder="Disabled readonly input"
@@ -66,20 +70,26 @@
                  readonly>
         </div>
       </div>
+      <textarea highlight-js
+                [lang]="'html'">
+        {{ codeDisabled }}
+      </textarea>
     </div>
 
     <hr>
 
     <div class="my-5">
-      <h2>Readonly</h2>
-      <div class="rounded border border-gray-300 p-4">
-        <div class="mb-3">
-          <input class="form-control"
-                 type="text"
-                 placeholder="Readonly input here..."
-                 readonly>
-        </div>
+      <h2 class="mb-3">Readonly</h2>
+      <div class="border border-gray-300 rounded-top p-4">
+        <input class="form-control"
+               type="text"
+               placeholder="Readonly input here..."
+               readonly>
       </div>
+      <textarea highlight-js
+                [lang]="'html'">
+        {{ codeReadonly }}
+      </textarea>
     </div>
   </div>
 </section>

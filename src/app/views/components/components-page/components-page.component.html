@@ -1,13 +1,9 @@
 <section class="components-page">
+  <app-header-page [label]="label"
+                   [description]="description"></app-header-page>
+
   <div class="container-fluid">
-    <div class="header my-5">
-      <h1>{{ label }}</h1>
-      <p>{{ description }}</p>
-    </div>
-
-    <hr>
-
-    <div class="my-5">
+    <div class="my-4">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">

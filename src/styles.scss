@@ -101,7 +101,9 @@ $form-label-color: $gray-800;
 @import '~bootstrap/scss/bootstrap';
 
 // ADDITIONAL
+@import 'assets/css/custom.scss';
 @import 'assets/css/sizing.scss';
 
 // PACKAGES
 @import '~placeholder-loading/src/scss/placeholder-loading.scss';
+@import '~highlight.js/styles/github.css';

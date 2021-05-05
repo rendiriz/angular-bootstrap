@@ -1,14 +1,10 @@
 <section class="color-page">
+  <app-header-page [label]="label"
+                   [description]="description"></app-header-page>
+
   <div class="container-fluid">
-    <div class="header my-5">
-      <h1>{{ label }}</h1>
-      <p>{{ description }}</p>
-    </div>
-
-    <hr>
-
     <div class="color-primary my-5">
-      <h2>Primary palette</h2>
+      <h2 class="mb-3">Primary palette</h2>
       <p>Our primary palette is comprised of neutrals, white, and blue to bring boldness to our brand and is
         used in logical ways throughout product and marketing to guide the eye and highlight the important
         bits.
@@ -74,7 +70,7 @@
     <hr>
 
     <div class="color-secondary my-5">
-      <h2>Secondary palette</h2>
+      <h2 class="mb-3">Secondary palette</h2>
       <p>Our secondary palette contains a variety of colors to keep things fresh and interesting. We lean on
         these colors more frequently when brand awareness is high, or on our own properties where we control
         the surrounding environment. When used in conjunction with our primary palette, these colors make
@@ -138,7 +134,7 @@
     <hr>
 
     <div class="color-neutral my-5">
-      <h2>Neutral palette</h2>
+      <h2 class="mb-3">Neutral palette</h2>
       <p>Neutrals have varying degrees of saturation that allow for the appropriate level of warmth across
         marketing and product. Typically they are used for text and subtle backgrounds when we don't want to
         draw too much attention to a particular touchpoint or convey information such as "to do" or
@@ -184,8 +180,8 @@
 
     <hr>
 
-    <div class="color-neutral my-5">
-      <h2>All colors</h2>
+    <div class="color-all my-5">
+      <h2 class="mb-3">All colors</h2>
 
       <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
@@ -276,6 +272,38 @@
             <span>$blue-gray-{{ item }}</span>
           </div>
         </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="color-utility my-5">
+      <h2 class="mb-3">Utilities</h2>
+
+      <div class="mb-4">
+        <h4>Background</h4>
+        <div class="border border-gray-300 rounded-top p-4">
+          <div class="p-3 mb-2 bg-yellow text-black">.bg-yellow</div>
+          <div class="p-3 mb-2 bg-green text-white">.bg-green</div>
+          <div class="p-3 mb-2 bg-blue text-white">.bg-blue</div>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeBackground }}
+        </textarea>
+      </div>
+
+      <div>
+        <h4>Color</h4>
+        <div class="border border-gray-300 rounded-top p-4">
+          <p class="text-yellow">.text-yellow</p>
+          <p class="text-green">.text-green</p>
+          <p class="text-blue mb-0">.text-blue</p>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeColor }}
+        </textarea>
       </div>
     </div>
   </div>

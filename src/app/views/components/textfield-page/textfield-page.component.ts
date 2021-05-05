@@ -34,6 +34,35 @@ export class TextfieldPageComponent implements OnInit, OnChanges, OnDestroy, Aft
   description!: string;
   breadcrumb!: any[];
 
+  // Variable
+  codeTextfield = `<div class="mb-3">
+  <label class="form-label">Name</label>
+  <input type="email" class="form-control" placeholder="Placeholder Name">
+</div>
+<div class="mb-0">
+  <label class="form-label">Description</label>
+  <textarea class="form-control" rows="3" placeholder="Placeholder Description"></textarea>
+</div>`;
+
+  codeSize = `<div class="mb-3">
+  <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+</div>
+<div class="mb-3">
+  <input class="form-control" type="text" placeholder="Default input">
+</div>
+<div class="mb-0">
+  <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+</div>`;
+
+  codeDisabled = `<div class="mb-3">
+  <input class="form-control" type="text" placeholder="Disabled input" disabled>
+</div>
+<div class="mb-0">
+  <input class="form-control" type="text" placeholder="Disabled readonly input" disabled readonly>
+</div>`;
+
+  codeReadonly = `<input class="form-control" type="text" placeholder="Readonly input here..." readonly>`;
+
   constructor(
     private cdRef: ChangeDetectorRef,
     private router: Router,

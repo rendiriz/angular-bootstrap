@@ -34,6 +34,44 @@ export class ButtonPageComponent implements OnInit, OnChanges, OnDestroy, AfterV
   description!: string;
   breadcrumb!: any[];
 
+  // Variable
+  codeButton = `<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary ms-2">Secondary</button>
+<button type="button" class="btn btn-success ms-2">Success</button>
+<button type="button" class="btn btn-danger ms-2">Danger</button>
+<button type="button" class="btn btn-warning ms-2">Warning</button>
+<button type="button" class="btn btn-info ms-2">Info</button>
+<button type="button" class="btn btn-link link-green text-decoration-none ms-2">Link</button>
+
+<button type="button" class="btn btn-yellow">Yellow</button>
+<button type="button" class="btn btn-green ms-2">Green</button>
+<button type="button" class="btn btn-blue ms-2">Blue</button>
+<button type="button" class="btn btn-pink ms-2">Pink</button>
+<button type="button" class="btn btn-red ms-2">Red</button>
+<button type="button" class="btn btn-purple ms-2">Purple</button>
+<button type="button" class="btn btn-gray ms-2">Gray</button>
+<button type="button" class="btn btn-blue-gray ms-2">Blue Gray</button>`;
+
+  codeOutline = `<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary ms-2">Secondary</button>
+<button type="button" class="btn btn-outline-success ms-2">Success</button>
+<button type="button" class="btn btn-outline-danger ms-2">Danger</button>
+<button type="button" class="btn btn-outline-warning ms-2">Warning</button>
+<button type="button" class="btn btn-outline-info ms-2">Info</button>
+
+<button type="button" class="btn btn-outline-yellow">Yellow</button>
+<button type="button" class="btn btn-outline-green ms-2">Green</button>
+<button type="button" class="btn btn-outline-blue ms-2">Blue</button>
+<button type="button" class="btn btn-outline-pink ms-2">Pink</button>
+<button type="button" class="btn btn-outline-red ms-2">Red</button>
+<button type="button" class="btn btn-outline-purple ms-2">Purple</button>
+<button type="button" class="btn btn-outline-gray ms-2">Gray</button>
+<button type="button" class="btn btn-outline-blue-gray ms-2">Blue Gray</button>`;
+
+  codeSize = `<button type="button" class="btn btn-lg btn-green">Green</button>
+<button type="button" class="btn btn-green ms-2">Green</button>
+<button type="button" class="btn btn-sm btn-green ms-2">Green</button>`;
+
   constructor(
     private cdRef: ChangeDetectorRef,
     private router: Router,
