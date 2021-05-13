@@ -1,0 +1,85 @@
+<section class="checkbox-page">
+  <app-header-page [label]="label"
+                   [description]="description"></app-header-page>
+
+  <div class="container-fluid">
+    <div class="my-5">
+      <div class="border border-gray-300 rounded-top p-4">
+        <div class="form-check">
+          <input class="form-check-input"
+                 type="checkbox"
+                 value="Indonesia">
+          <label class="form-check-label">
+            Indonesia
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input"
+                 type="checkbox"
+                 value="Inggris"
+                 checked>
+          <label class="form-check-label">
+            Inggris
+          </label>
+        </div>
+      </div>
+      <textarea highlight-js
+                [lang]="'html'">
+        {{ codeCheckbox }}
+      </textarea>
+    </div>
+
+    <hr>
+
+    <div class="my-5">
+      <h2 class="mb-3">Indeterminate</h2>
+      <div class="border border-gray-300 rounded-top p-4">
+        <div class="form-check">
+          <input #indeterminateCheckbox
+                 class="form-check-input"
+                 type="checkbox"
+                 value="1"
+                 [indeterminate]="true">
+          <label class="form-check-label">
+            Indeterminate checkbox
+          </label>
+        </div>
+      </div>
+      <textarea highlight-js
+                [lang]="'html'">
+        {{ codeIndeterminate }}
+      </textarea>
+    </div>
+
+    <hr>
+
+    <div class="my-5">
+      <h2 class="mb-3">Disabled</h2>
+      <div class="border border-gray-300 rounded-top p-4">
+        <div class="form-check">
+          <input class="form-check-input"
+                 type="checkbox"
+                 value="Indonesia"
+                 disabled>
+          <label class="form-check-label">
+            Indonesia
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input"
+                 type="checkbox"
+                 value="Inggris"
+                 checked
+                 disabled>
+          <label class="form-check-label">
+            Inggris
+          </label>
+        </div>
+      </div>
+      <textarea highlight-js
+                [lang]="'html'">
+        {{ codeDisabled }}
+      </textarea>
+    </div>
+  </div>
+</section>

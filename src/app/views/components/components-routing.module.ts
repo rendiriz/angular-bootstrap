@@ -16,6 +16,14 @@ const routes: Routes = [
         loadChildren: () => import('./button-page/button-page.module').then((m) => m.ButtonPageModule),
       },
       {
+        path: 'checkbox',
+        loadChildren: () => import('./checkbox-page/checkbox-page.module').then((m) => m.CheckboxPageModule),
+      },
+      {
+        path: 'radio',
+        loadChildren: () => import('./radio-page/radio-page.module').then((m) => m.RadioPageModule),
+      },
+      {
         path: 'select',
         loadChildren: () => import('./select-page/select-page.module').then((m) => m.SelectPageModule),
       },

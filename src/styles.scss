@@ -111,6 +111,24 @@ $form-label-color: $gray-800;
   line-height: 13px !important;
 }
 
+// Checkbox & Radio
+$form-check-margin-bottom: 8px;
+
+$form-check-input-border: 2px solid $gray-600;
+
+$form-check-input-checked-bg-color: $green-800;
+$form-check-input-checked-border-color: $green-800;
+
+$form-check-input-indeterminate-bg-color: $green-800;
+$form-check-input-indeterminate-border-color: $green-800;
+
+.form-check {
+  .form-check-label {
+    font-family: 'Lato';
+    font-size: 14px;
+  }
+}
+
 // CORE
 @import '~bootstrap/scss/bootstrap';
 
