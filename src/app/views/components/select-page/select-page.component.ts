@@ -50,6 +50,9 @@ export class SelectPageComponent implements OnInit, OnChanges, OnDestroy, AfterV
   searchItems: any[] = [];
   selectedSearchItem = 1;
 
+  radioItems: any[] = [];
+  selectedRadioItem = 'Indonesia';
+
   constructor(
     private cdRef: ChangeDetectorRef,
     private router: Router,
@@ -95,6 +98,12 @@ export class SelectPageComponent implements OnInit, OnChanges, OnDestroy, AfterV
     this.longItems = option;
     this.headerItems = option;
     this.searchItems = option;
+
+    const optionRadio = [
+      { value: 'Indonesia', label: 'Indonesia' },
+      { value: 'Inggris', label: 'Inggris' },
+    ];
+    this.radioItems = optionRadio;
   }
 
   ngOnChanges(changes: SimpleChanges): void {}
