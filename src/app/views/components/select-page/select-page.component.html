@@ -122,6 +122,40 @@
       </div>
     </div>
 
+    <div class="my-5">
+      <h4 class="mb-3">Radio</h4>
+      <div class="border border-gray-300 rounded-top p-4">
+        <ng-select [items]="radioItems"
+                   bindValue="value"
+                   bindLabel="label"
+                   [placeholder]="'Radio'"
+                   [closeOnSelect]="true"
+                   [(ngModel)]="selectedRadioItem">
+          <ng-template ng-option-tmp
+                       let-item="item"
+                       let-item$="item$"
+                       let-index="index">
+            <div class="form-check mb-0">
+              <input id="item-{{ index }}"
+                     class="form-check-input"
+                     type="radio"
+                     name="selectRadio"
+                     [value]="item.value"
+                     [checked]="item$.selected">
+              <label class="form-check-label"
+                     for="item-{{ index }}">
+                {{ item.label }}
+              </label>
+            </div>
+          </ng-template>
+        </ng-select>
+
+        <br>
+
+        Selected: {{ selectedRadioItem }}
+      </div>
+    </div>
+
     <hr>
 
     <div class="my-5">
