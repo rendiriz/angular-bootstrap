@@ -88,14 +88,28 @@ $input-border-radius-lg: 8px;
 $input-placeholder-color: $gray-600;
 $input-plaintext-color: $gray-50;
 
-.form-label {
-  font-family: 'Lato' !important;
-  line-height: 13px !important;
+$input-group-addon-color: $gray-400;
+$input-group-addon-bg: $gray-50;
+$input-group-addon-border-color: $gray-400;
+
+.input-group {
+  .input-group-text {
+    padding-right: 0.25rem;
+  }
+
+  input {
+    border-left: unset;
+  }
 }
 
 $form-label-margin-bottom: .5rem;
 $form-label-font-size: 15px;
 $form-label-color: $gray-800;
+
+.form-label {
+  font-family: 'Lato' !important;
+  line-height: 13px !important;
+}
 
 // CORE
 @import '~bootstrap/scss/bootstrap';

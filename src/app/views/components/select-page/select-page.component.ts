@@ -41,6 +41,15 @@ export class SelectPageComponent implements OnInit, OnChanges, OnDestroy, AfterV
   dropdownItems: any[] = [];
   selectedDropdownItem = 1;
 
+  longItems: any[] = [];
+  selectedLongItem = 1;
+
+  headerItems: any[] = [];
+  selectedHeaderItem = 1;
+
+  searchItems: any[] = [];
+  selectedSearchItem = 1;
+
   constructor(
     private cdRef: ChangeDetectorRef,
     private router: Router,
@@ -74,10 +83,18 @@ export class SelectPageComponent implements OnInit, OnChanges, OnDestroy, AfterV
       { value: 1, label: 'Indonesia' },
       { value: 2, label: 'Inggris' },
       { value: 3, label: 'Amerika' },
+      {
+        value: 4,
+        label:
+          'Synergistically procrastinate distributed infrastructures for mission-critical expertise. Appropriately customize innovative innovation with resource sucking portals. Interactively customize diverse products for strategic applications.',
+      },
     ];
 
     this.simpleItems = option;
     this.dropdownItems = option;
+    this.longItems = option;
+    this.headerItems = option;
+    this.searchItems = option;
   }
 
   ngOnChanges(changes: SimpleChanges): void {}
