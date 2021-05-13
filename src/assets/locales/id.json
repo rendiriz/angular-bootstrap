@@ -6,7 +6,9 @@
   "ROUTES.typography": "typography",
   "ROUTES.components": "components",
   "ROUTES.button": "button",
+  "ROUTES.checkbox": "checkbox",
   "ROUTES.pagination": "pagination",
+  "ROUTES.radio": "radio",
   "ROUTES.select": "select",
   "ROUTES.textfield": "textfield",
   "home": "Home",
@@ -15,7 +17,9 @@
   "typography": "Typography",
   "components": "Components",
   "button": "Button",
+  "checkbox": "Checkbox",
   "pagination": "Pagination",
+  "radio": "Radio",
   "select": "Select",
   "textfield": "Text field",
   "seo": {
@@ -39,6 +43,10 @@
       "title": "Components",
       "description": "Components are the reusable building blocks of our design system. Each component meets a specific interaction or UI need, and has been specifically created to work together to create patterns and intuitive user experiences."
     },
+    "checkbox-page": {
+      "title": "Checkbox",
+      "description": "A checkbox is an input control that allows a user to select one or more options from a number of choices."
+    },
     "button-page": {
       "title": "Button",
       "description": "A button triggers an event or action. They let users know what will happen next."
@@ -46,6 +54,10 @@
     "pagination-page": {
       "title": "Pagination",
       "description": "Pagination allows you to divide large amounts of content into smaller chunks across multiple pages."
+    },
+    "radio-page": {
+      "title": "Radio",
+      "description": "A radio input allows people to select only one option from a number of choices. Radio is generally displayed in a radio group."
     },
     "select-page": {
       "title": "Select",
