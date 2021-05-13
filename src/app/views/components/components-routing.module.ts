@@ -16,6 +16,10 @@ const routes: Routes = [
         loadChildren: () => import('./button-page/button-page.module').then((m) => m.ButtonPageModule),
       },
       {
+        path: 'select',
+        loadChildren: () => import('./select-page/select-page.module').then((m) => m.SelectPageModule),
+      },
+      {
         path: 'textfield',
         loadChildren: () =>
           import('./textfield-page/textfield-page.module').then((m) => m.TextfieldPageModule),

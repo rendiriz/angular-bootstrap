@@ -103,7 +103,9 @@ $form-label-color: $gray-800;
 // ADDITIONAL
 @import 'assets/css/custom.scss';
 @import 'assets/css/sizing.scss';
+@import 'assets/css/select.scss';
 
 // PACKAGES
 @import '~placeholder-loading/src/scss/placeholder-loading.scss';
 @import '~highlight.js/styles/github.css';
+@import '~@ng-select/ng-select/themes/default.theme.css';
