@@ -20,3 +20,4 @@ Run `npm run build:dev` for a dev server & `npm run build:prod` for a prod serve
 - [aitboudad](https://github.com/aitboudad)/[ngx-loading-bar](https://github.com/aitboudad/ngx-loading-bar)
 - [ngx-translate](http://www.ngx-translate.com/)
 - [gilsdav](https://github.com/gilsdav)/[ngx-translate-router](https://github.com/gilsdav/ngx-translate-router)
+- [ng-select](https://github.com/ng-select)/[ng-select](https://github.com/ng-select/ng-select)

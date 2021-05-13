@@ -6,6 +6,8 @@
   "ROUTES.typography": "typography",
   "ROUTES.components": "components",
   "ROUTES.button": "button",
+  "ROUTES.pagination": "pagination",
+  "ROUTES.select": "select",
   "ROUTES.textfield": "textfield",
   "home": "Home",
   "foundations": "Foundations",
@@ -13,6 +15,8 @@
   "typography": "Typography",
   "components": "Components",
   "button": "Button",
+  "pagination": "Pagination",
+  "select": "Select",
   "textfield": "Text field",
   "seo": {
     "home-page": {
@@ -38,6 +42,14 @@
     "button-page": {
       "title": "Button",
       "description": "A button triggers an event or action. They let users know what will happen next."
+    },
+    "pagination-page": {
+      "title": "Pagination",
+      "description": "Pagination allows you to divide large amounts of content into smaller chunks across multiple pages."
+    },
+    "select-page": {
+      "title": "Select",
+      "description": "Select allows users to make a single selection or multiple selections from a list of options."
     },
     "textfield-page": {
       "title": "Text field",

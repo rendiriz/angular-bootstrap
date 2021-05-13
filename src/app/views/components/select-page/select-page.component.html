@@ -1,0 +1,45 @@
+<section class="select-page">
+  <app-header-page [label]="label"
+                   [description]="description"></app-header-page>
+
+  <div class="container-fluid">
+    <div class="my-5">
+      <h2 class="mb-3">Single select</h2>
+      <div class="border border-gray-300 rounded-top p-4">
+        <ng-select [items]="simpleItems"
+                   bindValue="value"
+                   bindLabel="label"
+                   [placeholder]="'Single select'"
+                   [(ngModel)]="selectedSimpleItem">
+        </ng-select>
+
+        <br>
+
+        Selected: {{ selectedSimpleItem }}
+      </div>
+    </div>
+
+    <div class="my-5">
+      <h4 class="mb-3">Dropdown position</h4>
+      <div class="border border-gray-300 rounded-top p-4">
+        <ng-select [items]="dropdownItems"
+                   bindValue="value"
+                   bindLabel="label"
+                   [placeholder]="'Dropdown position'"
+                   [dropdownPosition]="'top'"
+                   [(ngModel)]="selectedDropdownItem">
+        </ng-select>
+
+        <br>
+
+        Selected: {{ selectedDropdownItem }}
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="my-5">
+      <h2 class="mb-3">Multi select</h2>
+    </div>
+  </div>
+</section>
