@@ -36,6 +36,92 @@
       </div>
     </div>
 
+    <div class="my-5">
+      <h4 class="mb-3">Long option</h4>
+      <div class="border border-gray-300 rounded-top p-4">
+        <ng-select class="ng-select-long"
+                   [items]="longItems"
+                   bindValue="value"
+                   bindLabel="label"
+                   [placeholder]="'Large option'"
+                   [(ngModel)]="selectedLongItem">
+        </ng-select>
+
+        <br>
+
+        Selected: {{ selectedLongItem }}
+      </div>
+    </div>
+
+    <div class="my-5">
+      <h4 class="mb-3">Header</h4>
+      <div class="border border-gray-300 rounded-top p-4">
+        <ng-select class="ng-select-header"
+                   [items]="headerItems"
+                   bindValue="value"
+                   bindLabel="label"
+                   [placeholder]="'Header'"
+                   [(ngModel)]="selectedHeaderItem">
+          <ng-template ng-header-tmp>
+            <div class="ng-dropdown-title">
+              Header
+            </div>
+          </ng-template>
+          <ng-template ng-option-tmp
+                       let-item="item"
+                       let-item$="item$"
+                       let-index="index">
+            <span class="ng-option-label">{{ item.label }}</span>
+          </ng-template>
+        </ng-select>
+
+        <br>
+
+        Selected: {{ selectedHeaderItem }}
+      </div>
+    </div>
+
+    <div class="my-5">
+      <h4 class="mb-3">Search</h4>
+      <div class="border border-gray-300 rounded-top p-4">
+        <ng-select #selectSelect
+                   class="ng-select-header ng-select-search"
+                   [items]="searchItems"
+                   bindValue="value"
+                   bindLabel="label"
+                   [placeholder]="'Search'"
+                   [searchable]="false"
+                   [(ngModel)]="selectedSearchItem">
+          <ng-template ng-header-tmp>
+            <div class="ng-dropdown-title">
+              Header
+            </div>
+            <div class="ng-dropdown-search">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fas fa-search"></i>
+                </span>
+                <input class="form-control"
+                       type="text"
+                       [placeholder]="'Cari'"
+                       (input)="selectSelect.filter($event.target.value)" />
+              </div>
+            </div>
+          </ng-template>
+          <ng-template ng-option-tmp
+                       let-item="item"
+                       let-item$="item$"
+                       let-index="index">
+            <span class="ng-option-label">{{ item.label }}</span>
+          </ng-template>
+        </ng-select>
+
+        <br>
+
+        Selected: {{ selectedSearchItem }}
+      </div>
+    </div>
+
     <hr>
 
     <div class="my-5">
