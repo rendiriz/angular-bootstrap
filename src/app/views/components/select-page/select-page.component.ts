@@ -53,6 +53,18 @@ export class SelectPageComponent implements OnInit, OnChanges, OnDestroy, AfterV
   radioItems: any[] = [];
   selectedRadioItem = 'Indonesia';
 
+  multiItems: any[] = [];
+  selectedMultiItem = [1, 2];
+
+  multiMoreItems: any[] = [];
+  selectedMultiMoreItem = [1, 2, 3, 4];
+
+  multiGroupItems: any[] = [];
+  selectedMultiGroupItem = [1, 2, 3, 4];
+
+  multiCheckboxItems: any[] = [];
+  selectedMultiCheckboxItem = [1, 2, 3, 4];
+
   constructor(
     private cdRef: ChangeDetectorRef,
     private router: Router,
@@ -86,8 +98,20 @@ export class SelectPageComponent implements OnInit, OnChanges, OnDestroy, AfterV
       { value: 1, label: 'Indonesia' },
       { value: 2, label: 'Inggris' },
       { value: 3, label: 'Amerika' },
+      { value: 4, label: 'Rusia' },
+      { value: 5, label: 'Korea Utara' },
+      { value: 6, label: 'Korea Selatan' },
+      { value: 7, label: 'Malaysia' },
+      { value: 8, label: 'Singapura' },
+      { value: 9, label: 'Australia' },
+      { value: 10, label: 'Gabon' },
+      { value: 11, label: 'Jerman' },
+      { value: 12, label: 'Portugal' },
+      { value: 13, label: 'Rumania' },
+      { value: 14, label: 'Selandia Baru' },
+      { value: 15, label: 'Myanmar' },
       {
-        value: 4,
+        value: 16,
         label:
           'Synergistically procrastinate distributed infrastructures for mission-critical expertise. Appropriately customize innovative innovation with resource sucking portals. Interactively customize diverse products for strategic applications.',
       },
@@ -104,6 +128,11 @@ export class SelectPageComponent implements OnInit, OnChanges, OnDestroy, AfterV
       { value: 'Inggris', label: 'Inggris' },
     ];
     this.radioItems = optionRadio;
+
+    this.multiItems = option;
+    this.multiMoreItems = option;
+    this.multiGroupItems = option;
+    this.multiCheckboxItems = option;
   }
 
   ngOnChanges(changes: SimpleChanges): void {}
