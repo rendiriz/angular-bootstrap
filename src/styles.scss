@@ -88,20 +88,11 @@ $input-border-radius-lg: 8px;
 $input-placeholder-color: $gray-600;
 $input-plaintext-color: $gray-50;
 
-$input-group-addon-color: $gray-400;
-$input-group-addon-bg: $gray-50;
+// TEXT FIELD GROUP
 $input-group-addon-border-color: $gray-400;
+@import 'assets/css/input-group.scss';
 
-.input-group {
-  .input-group-text {
-    padding-right: 0.25rem;
-  }
-
-  input {
-    border-left: unset;
-  }
-}
-
+// FORM LABEL
 $form-label-margin-bottom: .5rem;
 $form-label-font-size: 15px;
 $form-label-color: $gray-800;
@@ -111,7 +102,7 @@ $form-label-color: $gray-800;
   line-height: 13px !important;
 }
 
-// Checkbox & Radio
+// CHECKBOX & RADIO
 $form-check-margin-bottom: 8px;
 
 $form-check-input-border: 2px solid $gray-600;
