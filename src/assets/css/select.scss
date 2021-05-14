@@ -1,4 +1,36 @@
 .ng-select {
+  &.ng-select-single {
+    .ng-select-container {
+      height: 38px !important;
+    }
+  }
+
+  &.ng-select-multiple {
+    .ng-select-container {
+      min-height: 38px !important;
+
+      .ng-value-container {
+        .ng-placeholder {
+          top: 8px;
+        }
+
+        .ng-value {
+          background-color: $green-50;
+
+          .ng-value-icon {
+            &.left {
+              border-right: 1px solid $green-100;
+            }
+
+            &.right {
+              border-left: 1px solid $green-100;
+            }
+          }
+        }
+      }
+    }
+  }
+
   &.ng-select-opened {
     .ng-select-container {
       background-color: $gray-50;
@@ -32,7 +64,6 @@
   }
 
   .ng-select-container {
-    height: 38px !important;
     border-radius: 8px;
     background-color: $gray-50;
     border: 1px solid $gray-400;
