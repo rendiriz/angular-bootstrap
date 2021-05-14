@@ -10,6 +10,17 @@ Run `npm run dev` for a dev server. Navigate to `http://localhost:4200/`. The ap
 
 Run `npm run build:dev` for a dev server & `npm run build:prod` for a prod server. The build artifacts will be stored in the `dist/out` directory.
 
+## Custom
+
+- Color
+- Typography
+- Button
+- Checkbox
+- Pagination
+- Radio
+- Select
+- Text field
+
 ## Packages
 
 - [Bootstrap](https://getbootstrap.com/)
