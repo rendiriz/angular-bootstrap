@@ -63,6 +63,30 @@ export class TextfieldPageComponent implements OnInit, OnChanges, OnDestroy, Aft
 
   codeReadonly = `<input class="form-control" type="text" placeholder="Readonly input here..." readonly>`;
 
+  codeGroup = `<div class="input-group mb-3">
+  <span class="input-group-text">@</span>
+  <input type="text" class="form-control" placeholder="Username">
+</div>`;
+
+  codeGroupSearch = `<div class="input-group input-search left mb-3">
+  <span class="input-group-text">
+    <i class="fas fa-search"></i>
+  </span>
+  <input class="form-control" type="text" placeholder="Cari" />
+</div>
+<div class="input-group input-search right mb-3">
+  <input class="form-control" type="text" placeholder="Cari" />
+  <span class="input-group-text">
+    <i class="fas fa-search"></i>
+  </span>
+</div>
+<div class="input-group input-search-button right">
+  <input class="form-control" type="text" placeholder="Cari" />
+  <button class="btn btn-green" type="button">
+    <i class="fas fa-search"></i>
+  </button>
+</div>`;
+
   constructor(
     private cdRef: ChangeDetectorRef,
     private router: Router,
