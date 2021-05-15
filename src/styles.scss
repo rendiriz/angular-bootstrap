@@ -120,6 +120,33 @@ $form-check-input-indeterminate-border-color: $green-800;
   }
 }
 
+// DROPDOWN MENU
+$dropdown-border-radius: 8px;
+
+.dropdown {
+  &.dropup {
+    .dropdown-menu {
+      margin-bottom: 8px;
+    }
+  }
+
+  .dropdown-toggle {
+    &:after {
+      display: none !important;
+    }
+  }
+
+  .dropdown-menu {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+// BREADCRUMBS
+$breadcrumb-divider-color: $gray-300;
+$breadcrumb-active-color: $gray-800;
+$breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='#E0E0E0'/%3E%3C/svg%3E");
+
 // CORE
 @import '~bootstrap/scss/bootstrap';
 

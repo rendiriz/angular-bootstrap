@@ -12,12 +12,22 @@ const routes: Routes = [
           import('./components-page/components-page.module').then((m) => m.ComponentsPageModule),
       },
       {
+        path: 'breadcrumbs',
+        loadChildren: () =>
+          import('./breadcrumbs-page/breadcrumbs-page.module').then((m) => m.BreadcrumbsPageModule),
+      },
+      {
         path: 'button',
         loadChildren: () => import('./button-page/button-page.module').then((m) => m.ButtonPageModule),
       },
       {
         path: 'checkbox',
         loadChildren: () => import('./checkbox-page/checkbox-page.module').then((m) => m.CheckboxPageModule),
+      },
+      {
+        path: 'dropdown-menu',
+        loadChildren: () =>
+          import('./dropdown-menu-page/dropdown-menu-page.module').then((m) => m.DropdownMenuPageModule),
       },
       {
         path: 'radio',

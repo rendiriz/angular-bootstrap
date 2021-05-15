@@ -1,0 +1,51 @@
+<section class="dropdown-menu-page">
+  <app-header-page [label]="label"
+                   [description]="description"></app-header-page>
+
+  <div class="container-fluid">
+    <div class="my-5">
+      <div class="border border-gray-300 rounded-top p-4">
+        <div ngbDropdown
+             class="dropdown mb-3">
+          <button ngbDropdownToggle
+                  class="btn btn-green"
+                  type="button">
+            Dropdown link <i class="fas fa-caret-down ms-2"></i>
+          </button>
+          <ul ngbDropdownMenu
+              class="dropdown-menu">
+            <li ngbDropdownItem>
+              <a class="text-gray-800 text-decoration-none px-0"
+                 href="#">Action</a>
+            </li>
+            <li ngbDropdownItem>
+              <a class="text-gray-800 text-decoration-none px-0"
+                 href="#">Another action</a>
+            </li>
+            <li ngbDropdownItem>
+              <a class="text-gray-800 text-decoration-none px-0"
+                 href="#">Something else here</a>
+            </li>
+          </ul>
+        </div>
+
+        <div ngbDropdown
+             class="dropdown">
+          <button ngbDropdownToggle
+                  class="btn btn-outline-primary">
+            Dropdown button <i class="fas fa-caret-down ms-2"></i>
+          </button>
+          <div ngbDropdownMenu>
+            <button ngbDropdownItem>Action - 1</button>
+            <button ngbDropdownItem>Another Action</button>
+            <button ngbDropdownItem>Something else is here</button>
+          </div>
+        </div>
+      </div>
+      <textarea highlight-js
+                [lang]="'html'">
+        {{ codeButton }}
+      </textarea>
+    </div>
+  </div>
+</section>

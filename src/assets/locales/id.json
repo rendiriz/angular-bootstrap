@@ -5,8 +5,10 @@
   "ROUTES.color": "color",
   "ROUTES.typography": "typography",
   "ROUTES.components": "components",
+  "ROUTES.breadcrumbs": "breadcrumbs",
   "ROUTES.button": "button",
   "ROUTES.checkbox": "checkbox",
+  "ROUTES.dropdown-menu": "dropdown-menu",
   "ROUTES.pagination": "pagination",
   "ROUTES.radio": "radio",
   "ROUTES.select": "select",
@@ -16,8 +18,10 @@
   "color": "Color",
   "typography": "Typography",
   "components": "Components",
+  "breadcrumbs": "Breadcrumbs",
   "button": "Button",
   "checkbox": "Checkbox",
+  "dropdown-menu": "Dropdown Menu",
   "pagination": "Pagination",
   "radio": "Radio",
   "select": "Select",
@@ -43,13 +47,21 @@
       "title": "Components",
       "description": "Components are the reusable building blocks of our design system. Each component meets a specific interaction or UI need, and has been specifically created to work together to create patterns and intuitive user experiences."
     },
-    "checkbox-page": {
-      "title": "Checkbox",
-      "description": "A checkbox is an input control that allows a user to select one or more options from a number of choices."
+    "breadcrumbs-page": {
+      "title": "Breadcrumbs",
+      "description": "Breadcrumbs are a navigation system used to show a user's location in a site or app."
     },
     "button-page": {
       "title": "Button",
       "description": "A button triggers an event or action. They let users know what will happen next."
+    },
+    "checkbox-page": {
+      "title": "Checkbox",
+      "description": "A checkbox is an input control that allows a user to select one or more options from a number of choices."
+    },
+    "dropdown-menu-page": {
+      "title": "Dropdown Menu",
+      "description": "A dropdown menu displays a list of actions or options to a user."
     },
     "pagination-page": {
       "title": "Pagination",

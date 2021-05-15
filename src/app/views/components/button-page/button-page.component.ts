@@ -72,6 +72,13 @@ export class ButtonPageComponent implements OnInit, OnChanges, OnDestroy, AfterV
 <button type="button" class="btn btn-green ms-2">Green</button>
 <button type="button" class="btn btn-sm btn-green ms-2">Green</button>`;
 
+  codeIcon = `<button type="button" class="btn btn-green">
+  Green <i class="fas fa-user ms-2"></i>
+</button>
+<button type="button" class="btn btn-green ms-2">
+  <i class="fas fa-user me-2"></i> Green
+</button>`;
+
   constructor(
     private cdRef: ChangeDetectorRef,
     private router: Router,

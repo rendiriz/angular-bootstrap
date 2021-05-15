@@ -109,5 +109,25 @@
         {{ codeSize }}
       </textarea>
     </div>
+
+    <hr>
+
+    <div class="my-5">
+      <h2 class="mb-3">Icon</h2>
+      <div class="border border-gray-300 rounded-top p-4">
+        <button type="button"
+                class="btn btn-green">
+          Green <i class="fas fa-user ms-2"></i>
+        </button>
+        <button type="button"
+                class="btn btn-green ms-2">
+          <i class="fas fa-user me-2"></i> Green
+        </button>
+      </div>
+      <textarea highlight-js
+                [lang]="'html'">
+        {{ codeIcon }}
+      </textarea>
+    </div>
   </div>
 </section>
