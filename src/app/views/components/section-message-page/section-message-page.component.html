@@ -1,0 +1,120 @@
+<section class="section-message-page">
+  <app-header-page [label]="label"
+                   [description]="description"></app-header-page>
+
+  <div class="container-fluid">
+    <div class="my-5">
+      <div class="border border-gray-300 rounded-top p-4">
+        <p *ngFor="let alert of alerts">
+          <ngb-alert [type]="alert.type"
+                     (closed)="close(alert)">
+            {{ alert.message }}
+          </ngb-alert>
+        </p>
+
+        <button type="button"
+                class="btn btn-green"
+                (click)="reset()">Reset</button>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="my-5">
+      <h2 class="mb-3">Custom</h2>
+      <div class="border border-gray-300 rounded-top p-4">
+        <ngb-alert type="blue-800"
+                   [dismissible]="true"
+                   class="d-flex">
+          <div class="pe-3">
+            <i class="fas fa-info-circle"></i>
+          </div>
+          <div>
+            <h5 class="alert-heading">Well done!</h5>
+            <p>Conveniently administrate granular resources without tactical growth strategies. Credibly
+              revolutionize 24/7 leadership skills whereas competitive methods of empowerment. Distinctively
+              deploy orthogonal synergy whereas impactful total linkage. Seamlessly grow leveraged total
+              linkage
+              via robust ROI. Synergistically matrix synergistic best practices through 2.0 services.
+            </p>
+            <div>
+              <a href="#"
+                 class="link-blue-800 text-decoration-none">Aksi 1</a>
+              <a href="#"
+                 class="link-blue-800 text-decoration-none ms-4">Aksi 2</a>
+            </div>
+          </div>
+        </ngb-alert>
+
+        <ngb-alert type="green-800"
+                   [dismissible]="true"
+                   class="d-flex">
+          <div class="pe-3">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div>
+            <h5 class="alert-heading">Well done!</h5>
+            <p>Conveniently administrate granular resources without tactical growth strategies. Credibly
+              revolutionize 24/7 leadership skills whereas competitive methods of empowerment. Distinctively
+              deploy orthogonal synergy whereas impactful total linkage. Seamlessly grow leveraged total
+              linkage
+              via robust ROI. Synergistically matrix synergistic best practices through 2.0 services.
+            </p>
+            <div>
+              <a href="#"
+                 class="link-green-800 text-decoration-none">Aksi 1</a>
+              <a href="#"
+                 class="link-green-800 text-decoration-none ms-4">Aksi 2</a>
+            </div>
+          </div>
+        </ngb-alert>
+
+        <ngb-alert type="yellow-800"
+                   [dismissible]="true"
+                   class="d-flex">
+          <div class="pe-3">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div>
+            <h5 class="alert-heading">Well done!</h5>
+            <p>Conveniently administrate granular resources without tactical growth strategies. Credibly
+              revolutionize 24/7 leadership skills whereas competitive methods of empowerment. Distinctively
+              deploy orthogonal synergy whereas impactful total linkage. Seamlessly grow leveraged total
+              linkage
+              via robust ROI. Synergistically matrix synergistic best practices through 2.0 services.
+            </p>
+            <div>
+              <a href="#"
+                 class="link-yellow-800 text-decoration-none">Aksi 1</a>
+              <a href="#"
+                 class="link-yellow-800 text-decoration-none ms-4">Aksi 2</a>
+            </div>
+          </div>
+        </ngb-alert>
+
+        <ngb-alert type="red-800"
+                   [dismissible]="true"
+                   class="d-flex">
+          <div class="pe-3">
+            <i class="fas fa-info-circle"></i>
+          </div>
+          <div>
+            <h5 class="alert-heading">Well done!</h5>
+            <p>Conveniently administrate granular resources without tactical growth strategies. Credibly
+              revolutionize 24/7 leadership skills whereas competitive methods of empowerment. Distinctively
+              deploy orthogonal synergy whereas impactful total linkage. Seamlessly grow leveraged total
+              linkage
+              via robust ROI. Synergistically matrix synergistic best practices through 2.0 services.
+            </p>
+            <div>
+              <a href="#"
+                 class="link-red-800 text-decoration-none">Aksi 1</a>
+              <a href="#"
+                 class="link-red-800 text-decoration-none ms-4">Aksi 2</a>
+            </div>
+          </div>
+        </ngb-alert>
+      </div>
+    </div>
+  </div>
+</section>

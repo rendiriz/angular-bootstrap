@@ -11,6 +11,7 @@
   "ROUTES.dropdown-menu": "dropdown-menu",
   "ROUTES.pagination": "pagination",
   "ROUTES.radio": "radio",
+  "ROUTES.section-message": "section-message",
   "ROUTES.select": "select",
   "ROUTES.textfield": "textfield",
   "home": "Home",
@@ -24,6 +25,7 @@
   "dropdown-menu": "Dropdown Menu",
   "pagination": "Pagination",
   "radio": "Radio",
+  "section-message": "Section Message",
   "select": "Select",
   "textfield": "Text field",
   "seo": {
@@ -70,6 +72,10 @@
     "radio-page": {
       "title": "Radio",
       "description": "A radio input allows people to select only one option from a number of choices. Radio is generally displayed in a radio group."
+    },
+    "section-message-page": {
+      "title": "Section Message",
+      "description": "A section message is used to alert users to a particular section of the screen."
     },
     "select-page": {
       "title": "Select",

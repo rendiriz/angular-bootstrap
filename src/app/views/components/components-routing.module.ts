@@ -34,6 +34,13 @@ const routes: Routes = [
         loadChildren: () => import('./radio-page/radio-page.module').then((m) => m.RadioPageModule),
       },
       {
+        path: 'section-message',
+        loadChildren: () =>
+          import('./section-message-page/section-message-page.module').then(
+            (m) => m.SectionMessagePageModule
+          ),
+      },
+      {
         path: 'select',
         loadChildren: () => import('./select-page/select-page.module').then((m) => m.SelectPageModule),
       },
