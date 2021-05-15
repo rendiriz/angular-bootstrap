@@ -13,6 +13,7 @@
   "ROUTES.radio": "radio",
   "ROUTES.section-message": "section-message",
   "ROUTES.select": "select",
+  "ROUTES.tabs": "tabs",
   "ROUTES.textfield": "textfield",
   "home": "Home",
   "foundations": "Foundations",
@@ -27,6 +28,7 @@
   "radio": "Radio",
   "section-message": "Section Message",
   "select": "Select",
+  "tabs": "Tabs",
   "textfield": "Text field",
   "seo": {
     "home-page": {
@@ -80,6 +82,10 @@
     "select-page": {
       "title": "Select",
       "description": "Select allows users to make a single selection or multiple selections from a list of options."
+    },
+    "tabs-page": {
+      "title": "Tabs",
+      "description": "Tabs are used to organize content by grouping similar information on the same page."
     },
     "textfield-page": {
       "title": "Text field",

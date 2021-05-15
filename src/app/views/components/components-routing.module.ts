@@ -45,6 +45,10 @@ const routes: Routes = [
         loadChildren: () => import('./select-page/select-page.module').then((m) => m.SelectPageModule),
       },
       {
+        path: 'tabs',
+        loadChildren: () => import('./tabs-page/tabs-page.module').then((m) => m.TabsPageModule),
+      },
+      {
         path: 'textfield',
         loadChildren: () =>
           import('./textfield-page/textfield-page.module').then((m) => m.TextfieldPageModule),

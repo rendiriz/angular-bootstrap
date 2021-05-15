@@ -20,7 +20,9 @@ Run `npm run build:dev` for a dev server & `npm run build:prod` for a prod serve
 - Dropdown Menu
 - Pagination
 - Radio
+- Section Message
 - Select
+- Tabs
 - Text field
 
 ## Packages
