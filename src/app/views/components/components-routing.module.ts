@@ -53,6 +53,10 @@ const routes: Routes = [
         loadChildren: () =>
           import('./textfield-page/textfield-page.module').then((m) => m.TextfieldPageModule),
       },
+      {
+        path: 'tooltip',
+        loadChildren: () => import('./tooltip-page/tooltip-page.module').then((m) => m.TooltipPageModule),
+      },
     ],
   },
 ];

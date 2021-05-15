@@ -15,6 +15,7 @@
   "ROUTES.select": "select",
   "ROUTES.tabs": "tabs",
   "ROUTES.textfield": "textfield",
+  "ROUTES.tooltip": "tooltip",
   "home": "Home",
   "foundations": "Foundations",
   "color": "Color",
@@ -30,6 +31,7 @@
   "select": "Select",
   "tabs": "Tabs",
   "textfield": "Text field",
+  "tooltip": "Tooltip",
   "seo": {
     "home-page": {
       "title": "Home",
@@ -90,6 +92,10 @@
     "textfield-page": {
       "title": "Text field",
       "description": "A text field is an input that allows a user to write or edit text."
+    },
+    "tooltip-page": {
+      "title": "Tooltip",
+      "description": "A tooltip is a floating, non-actionable label used to explain a user interface element or feature."
     }
   }
 }

@@ -24,6 +24,7 @@ Run `npm run build:dev` for a dev server & `npm run build:prod` for a prod serve
 - Select
 - Tabs
 - Text field
+- Tooltip
 
 ## Packages
 

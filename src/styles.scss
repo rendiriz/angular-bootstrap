@@ -156,6 +156,21 @@ $alert-color-scale: 20%;
 // TABS
 @import 'assets/css/tabs.scss';
 
+// TOOLTIP
+$tooltip-max-width: 275px;
+$tooltip-color: $white;
+$tooltip-bg: $gray-900;
+$tooltip-border-radius: 8px;
+$tooltip-opacity: 1;
+$tooltip-padding-y: 8px;
+$tooltip-padding-x: 12px;
+
+.tooltip {
+  .tooltip-inner {
+    text-align: start;
+  }
+}
+
 // CORE
 @import '~bootstrap/scss/bootstrap';
 
