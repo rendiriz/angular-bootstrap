@@ -22,6 +22,7 @@ Run `npm run build:dev` for a dev server & `npm run build:prod` for a prod serve
 - Radio
 - Section Message
 - Select
+- Table
 - Tabs
 - Text field
 - Tooltip

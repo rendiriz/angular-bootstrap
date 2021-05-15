@@ -1,0 +1,165 @@
+.table-responsive {
+  &.table-custom {
+    .table {
+      border-collapse: separate;
+      border-spacing: 0;
+      border: 1px solid $gray-300;
+      border-radius: 8px;
+
+      thead tr th:first-child {
+        border-top-left-radius: 7.25px;
+      }
+
+      thead tr th:last-child {
+        border-top-right-radius: 7.25px;
+      }
+
+      tbody tr:last-child td:first-child {
+        border-bottom-left-radius: 7.25px;
+      }
+
+      tbody tr:last-child td:last-child {
+        border-bottom-right-radius: 7.25px;
+      }
+
+      &.table-out-head {
+        tbody tr:first-child td:first-child {
+          border-top-left-radius: 7.25px;
+        }
+
+        tbody tr:first-child td:last-child {
+          border-top-right-radius: 7.25px;
+        }
+      }
+
+      &.table-green {
+        thead {
+          background-color: $green-700;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.table-paging {
+  .table {
+    margin-bottom: 0;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+
+    tbody tr:last-child td:first-child {
+      border-bottom-left-radius: 0 !important;
+    }
+
+    tbody tr:last-child td:last-child {
+      border-bottom-right-radius: 0 !important;
+    }
+  }
+
+  .paging {
+    font-size: 14px;
+    background-color: $gray-50;
+    border: 1px solid $gray-300;
+    border-top: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    .paging-info {
+      .paging-per-page {
+        display: flex;
+        align-items: center;
+      }
+
+      .paging-records {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .paging-nav {
+      display: flex;
+      align-items: center;
+
+      .paging-page {
+        display: flex;
+        align-items: center;
+      }
+
+      .paging-button-end {
+        display: flex;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .paging-info {
+        display: none;
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      .paging-nav {
+        justify-content: space-between;
+
+        .paging-button-start {
+          display: flex;
+
+          .paging-prev {
+            border-right: 1px solid $gray-200;
+          }
+        }
+
+        .paging-button-end {
+          .paging-prev {
+            display: none;
+          }
+
+          .paging-next {
+            border-left: 1px solid $gray-200;
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      .paging-info {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      .paging-info {
+        display: flex;
+        justify-content: start;
+
+        .paging-per-page {
+          border-right: 1px solid $gray-200;
+        }
+
+        .paging-records {
+          border-right: 1px solid $gray-200;
+        }
+      }
+
+      .paging-nav {
+        justify-content: flex-end;
+
+        .paging-button-start {
+          display: none;
+        }
+
+        .paging-page {
+          border-right: 1px solid $gray-200;
+        }
+
+        .paging-button-end {
+          .paging-prev {
+            display: block;
+            border-right: 1px solid $gray-200;
+          }
+        }
+      }
+    }
+  }
+}

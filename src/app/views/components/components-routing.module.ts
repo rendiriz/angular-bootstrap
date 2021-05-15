@@ -30,6 +30,11 @@ const routes: Routes = [
           import('./dropdown-menu-page/dropdown-menu-page.module').then((m) => m.DropdownMenuPageModule),
       },
       {
+        path: 'pagination',
+        loadChildren: () =>
+          import('./pagination-page/pagination-page.module').then((m) => m.PaginationPageModule),
+      },
+      {
         path: 'radio',
         loadChildren: () => import('./radio-page/radio-page.module').then((m) => m.RadioPageModule),
       },
@@ -43,6 +48,10 @@ const routes: Routes = [
       {
         path: 'select',
         loadChildren: () => import('./select-page/select-page.module').then((m) => m.SelectPageModule),
+      },
+      {
+        path: 'table',
+        loadChildren: () => import('./table-page/table-page.module').then((m) => m.TablePageModule),
       },
       {
         path: 'tabs',

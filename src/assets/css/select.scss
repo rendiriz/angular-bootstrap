@@ -228,3 +228,34 @@
     }
   }
 }
+
+// Paging
+.ng-select-paging {
+  &.ng-select-opened {
+    .ng-select-container {
+      background-color: $white;
+    }
+
+    &.ng-select-bottom {
+      .ng-select-container {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    &.ng-select-top {
+      .ng-select-container {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }
+  }
+
+  .ng-select-container {
+    height: auto !important;
+    width: 67px !important;
+    background-color: $white;
+    border: none;
+    border-radius: 0;
+  }
+}

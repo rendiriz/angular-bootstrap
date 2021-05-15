@@ -13,6 +13,7 @@
   "ROUTES.radio": "radio",
   "ROUTES.section-message": "section-message",
   "ROUTES.select": "select",
+  "ROUTES.table": "table",
   "ROUTES.tabs": "tabs",
   "ROUTES.textfield": "textfield",
   "ROUTES.tooltip": "tooltip",
@@ -29,6 +30,7 @@
   "radio": "Radio",
   "section-message": "Section Message",
   "select": "Select",
+  "table": "Table",
   "tabs": "Tabs",
   "textfield": "Text field",
   "tooltip": "Tooltip",
@@ -84,6 +86,10 @@
     "select-page": {
       "title": "Select",
       "description": "Select allows users to make a single selection or multiple selections from a list of options."
+    },
+    "table-page": {
+      "title": "Table",
+      "description": "Table."
     },
     "tabs-page": {
       "title": "Tabs",
