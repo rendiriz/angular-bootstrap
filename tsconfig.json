@@ -30,6 +30,7 @@
       "@interceptors": ["src/app/_core/interceptors/index.ts"],
       "@models": ["src/app/_core/models/index.ts"],
       "@pipes": ["src/app/_core/pipes/index.ts"],
+      "@resolvers": ["src/app/_core/resolvers/index.ts"],
       "@services": ["src/app/_core/services/index.ts"],
       "@store/*": ["src/app/_core/store/*"],
       "@templates/*": ["src/app/_core/templates/*"],
@@ -46,6 +47,6 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true,
     "strictDomEventTypes": false,
-    "enableIvy": false
+    "enableIvy": true
   }
 }

@@ -2,62 +2,64 @@
   <app-header-page [label]="label"
                    [description]="description"></app-header-page>
 
-  <div class="container-fluid">
-    <div class="my-5">
-      <div class="border border-gray-300 rounded-top p-4">
-        <button type="button"
-                class="btn btn-outline-secondary"
-                placement="top"
-                ngbTooltip="Tooltip on top">
-          Tooltip on top
-        </button>
-        <button type="button"
-                class="btn btn-outline-secondary ms-2"
-                placement="right"
-                ngbTooltip="Tooltip on right">
-          Tooltip on right
-        </button>
-        <button type="button"
-                class="btn btn-outline-secondary ms-2"
-                placement="bottom"
-                ngbTooltip="Tooltip on bottom">
-          Tooltip on bottom
-        </button>
-        <button type="button"
-                class="btn btn-outline-secondary ms-2"
-                placement="left"
-                ngbTooltip="Tooltip on left">
-          Tooltip on left
-        </button>
+  <div class="main-page">
+    <div class="container">
+      <div class="my-5">
+        <div class="border border-gray-300 rounded-top p-4">
+          <button type="button"
+                  class="btn btn-outline-secondary"
+                  placement="top"
+                  ngbTooltip="Tooltip on top">
+            Tooltip on top
+          </button>
+          <button type="button"
+                  class="btn btn-outline-secondary ms-2"
+                  placement="right"
+                  ngbTooltip="Tooltip on right">
+            Tooltip on right
+          </button>
+          <button type="button"
+                  class="btn btn-outline-secondary ms-2"
+                  placement="bottom"
+                  ngbTooltip="Tooltip on bottom">
+            Tooltip on bottom
+          </button>
+          <button type="button"
+                  class="btn btn-outline-secondary ms-2"
+                  placement="left"
+                  ngbTooltip="Tooltip on left">
+            Tooltip on left
+          </button>
 
-        <br>
-        <br>
+          <br>
+          <br>
 
-        <ng-template #tipContent>
-          <strong>Tipe Download</strong> <br>
-          Tipe file yang dapat didownload adalah: <br>
-          - Excel <br>
-          - CSV
-        </ng-template>
-        <button type="button"
-                class="btn btn-outline-secondary"
-                [ngbTooltip]="tipContent"
-                [autoClose]="false"
-                triggers="manual"
-                #t="ngbTooltip"
-                (click)="t.open()">
-          Click me to open a tooltip & I've got markup and bindings in my tooltip!
-        </button>
-        <button type="button"
-                class="btn btn-outline-secondary ms-2"
-                (click)="t.close()">
-          Click me to close a tooltip
-        </button>
-      </div>
-      <textarea highlight-js
-                [lang]="'html'">
+          <ng-template #tipContent>
+            <strong>Tipe Download</strong> <br>
+            Tipe file yang dapat didownload adalah: <br>
+            - Excel <br>
+            - CSV
+          </ng-template>
+          <button type="button"
+                  class="btn btn-outline-secondary"
+                  [ngbTooltip]="tipContent"
+                  [autoClose]="false"
+                  triggers="manual"
+                  #t="ngbTooltip"
+                  (click)="t.open()">
+            Click me to open a tooltip & I've got markup and bindings in my tooltip!
+          </button>
+          <button type="button"
+                  class="btn btn-outline-secondary ms-2"
+                  (click)="t.close()">
+            Click me to close a tooltip
+          </button>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
         {{ code }}
       </textarea>
+      </div>
     </div>
   </div>
 </section>

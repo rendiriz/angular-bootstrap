@@ -2,29 +2,21 @@
   <app-header-page [label]="label"
                    [description]="description"></app-header-page>
 
-  <div class="container-fluid">
-    <div class="my-4">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">{{ 'color' | translate }}</h5>
-              <p class="card-text">
-                Color distinguishes our brand and helps us create consistent experiences across products.
-              </p>
-              <a [routerLink]="['/foundations/color' | localize]">More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Typography</h5>
-              <p class="card-text">
-                Typography is our system of fonts. Each font conveys the appropriate sentiment to assist our
-                users through each stage of their journey.
-              </p>
-              <a [routerLink]="['/foundations/typography' | localize]">More</a>
+  <div class="main-page">
+    <div class="container">
+      <div class="my-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div *ngFor="let item of menu"
+               class="col">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{ item.name | translate }}</h5>
+                <p class="card-text">
+                  {{ 'seo.' + item.name + '-page.description' | translate }}
+                </p>
+                <a class="link-green mt-auto"
+                   [routerLink]="[item.link | localize]">More</a>
+              </div>
             </div>
           </div>
         </div>

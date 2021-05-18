@@ -2,56 +2,58 @@
   <app-header-page [label]="label"
                    [description]="description"></app-header-page>
 
-  <div class="container-fluid">
-    <div class="my-5">
-      <div class="border border-gray-300 rounded-top p-4">
-        <nav>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Library</a></li>
-            <li class="breadcrumb-item active">Data</li>
-          </ol>
-        </nav>
-      </div>
-      <textarea highlight-js
-                [lang]="'html'">
+  <div class="main-page">
+    <div class="container">
+      <div class="my-5">
+        <div class="border border-gray-300 rounded-top p-4">
+          <nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active">Data</li>
+            </ol>
+          </nav>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
         {{ codeBreadcrumb }}
       </textarea>
-    </div>
-
-    <hr>
-
-    <div class="my-5">
-      <h2 class="mb-3">Long</h2>
-      <div class="border border-gray-300 rounded-top p-4">
-        <nav>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li ngbDropdown
-                class="breadcrumb-item">
-              <a ngbDropdownToggle
-                 [routerLink]="[]">...</a>
-              <ul ngbDropdownMenu
-                  class="dropdown-menu">
-                <li ngbDropdownItem>
-                  <a class="text-gray-800 text-decoration-none px-0"
-                     href="#">Library</a>
-                </li>
-                <li ngbDropdownItem>
-                  <a class="text-gray-800 text-decoration-none px-0"
-                     href="#">Data</a>
-                </li>
-              </ul>
-            </li>
-            <li class="breadcrumb-item"><a href="#">Base</a></li>
-            <li class="breadcrumb-item active">Create</li>
-          </ol>
-        </nav>
       </div>
-      <textarea highlight-js
-                [lang]="'html'">
+
+      <hr>
+
+      <div class="my-5">
+        <h2 class="mb-3">Long</h2>
+        <div class="border border-gray-300 rounded-top p-4">
+          <nav>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li ngbDropdown
+                  class="breadcrumb-item">
+                <a ngbDropdownToggle
+                   [routerLink]="[]">...</a>
+                <ul ngbDropdownMenu
+                    class="dropdown-menu">
+                  <li ngbDropdownItem>
+                    <a class="text-gray-800 text-decoration-none px-0"
+                       href="#">Library</a>
+                  </li>
+                  <li ngbDropdownItem>
+                    <a class="text-gray-800 text-decoration-none px-0"
+                       href="#">Data</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="breadcrumb-item"><a href="#">Base</a></li>
+              <li class="breadcrumb-item active">Create</li>
+            </ol>
+          </nav>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
         {{ codeLong }}
       </textarea>
+      </div>
     </div>
   </div>
 </section>

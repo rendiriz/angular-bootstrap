@@ -2,294 +2,296 @@
   <app-header-page [label]="label"
                    [description]="description"></app-header-page>
 
-  <div class="container-fluid">
-    <div class="my-5">
-      <h2 class="mb-3">Single select</h2>
-      <div class="border border-gray-300 rounded-top p-4">
-        <ng-select [items]="simpleItems"
-                   bindValue="value"
-                   bindLabel="label"
-                   [placeholder]="'Single select'"
-                   [(ngModel)]="selectedSimpleItem">
-        </ng-select>
+  <div class="main-page">
+    <div class="container">
+      <div class="my-5">
+        <h2 class="mb-3">Single select</h2>
+        <div class="border border-gray-300 rounded-top p-4">
+          <ng-select [items]="simpleItems"
+                     bindValue="value"
+                     bindLabel="label"
+                     [placeholder]="'Single select'"
+                     [(ngModel)]="selectedSimpleItem">
+          </ng-select>
 
-        <br>
+          <br>
 
-        Selected: {{ selectedSimpleItem }}
+          Selected: {{ selectedSimpleItem }}
+        </div>
       </div>
-    </div>
 
-    <div class="my-5">
-      <h4 class="mb-3">Dropdown position</h4>
-      <div class="border border-gray-300 rounded-top p-4">
-        <ng-select [items]="dropdownItems"
-                   bindValue="value"
-                   bindLabel="label"
-                   [placeholder]="'Dropdown position'"
-                   [dropdownPosition]="'top'"
-                   [(ngModel)]="selectedDropdownItem">
-        </ng-select>
+      <div class="my-5">
+        <h4 class="mb-3">Dropdown position</h4>
+        <div class="border border-gray-300 rounded-top p-4">
+          <ng-select [items]="dropdownItems"
+                     bindValue="value"
+                     bindLabel="label"
+                     [placeholder]="'Dropdown position'"
+                     [dropdownPosition]="'top'"
+                     [(ngModel)]="selectedDropdownItem">
+          </ng-select>
 
-        <br>
+          <br>
 
-        Selected: {{ selectedDropdownItem }}
+          Selected: {{ selectedDropdownItem }}
+        </div>
       </div>
-    </div>
 
-    <div class="my-5">
-      <h4 class="mb-3">Long option</h4>
-      <div class="border border-gray-300 rounded-top p-4">
-        <ng-select class="ng-select-long"
-                   [items]="longItems"
-                   bindValue="value"
-                   bindLabel="label"
-                   [placeholder]="'Large option'"
-                   [(ngModel)]="selectedLongItem">
-        </ng-select>
+      <div class="my-5">
+        <h4 class="mb-3">Long option</h4>
+        <div class="border border-gray-300 rounded-top p-4">
+          <ng-select class="ng-select-long"
+                     [items]="longItems"
+                     bindValue="value"
+                     bindLabel="label"
+                     [placeholder]="'Large option'"
+                     [(ngModel)]="selectedLongItem">
+          </ng-select>
 
-        <br>
+          <br>
 
-        Selected: {{ selectedLongItem }}
+          Selected: {{ selectedLongItem }}
+        </div>
       </div>
-    </div>
 
-    <div class="my-5">
-      <h4 class="mb-3">Header</h4>
-      <div class="border border-gray-300 rounded-top p-4">
-        <ng-select class="ng-select-header"
-                   [items]="headerItems"
-                   bindValue="value"
-                   bindLabel="label"
-                   [placeholder]="'Header'"
-                   [(ngModel)]="selectedHeaderItem">
-          <ng-template ng-header-tmp>
-            <div class="ng-dropdown-title">
-              Header
-            </div>
-          </ng-template>
-          <ng-template ng-option-tmp
-                       let-item="item"
-                       let-item$="item$"
-                       let-index="index">
-            <span class="ng-option-label">{{ item.label }}</span>
-          </ng-template>
-        </ng-select>
-
-        <br>
-
-        Selected: {{ selectedHeaderItem }}
-      </div>
-    </div>
-
-    <div class="my-5">
-      <h4 class="mb-3">Search</h4>
-      <div class="border border-gray-300 rounded-top p-4">
-        <ng-select #selectSelect
-                   class="ng-select-header ng-select-search"
-                   [items]="searchItems"
-                   bindValue="value"
-                   bindLabel="label"
-                   [placeholder]="'Search'"
-                   [searchable]="false"
-                   [(ngModel)]="selectedSearchItem">
-          <ng-template ng-header-tmp>
-            <div class="ng-dropdown-title">
-              Header
-            </div>
-            <div class="ng-dropdown-search">
-              <div class="input-group input-search left">
-                <span class="input-group-text">
-                  <i class="fas fa-search"></i>
-                </span>
-                <input class="form-control"
-                       type="text"
-                       [placeholder]="'Cari'"
-                       (input)="selectSelect.filter($event.target.value)" />
+      <div class="my-5">
+        <h4 class="mb-3">Header</h4>
+        <div class="border border-gray-300 rounded-top p-4">
+          <ng-select class="ng-select-header"
+                     [items]="headerItems"
+                     bindValue="value"
+                     bindLabel="label"
+                     [placeholder]="'Header'"
+                     [(ngModel)]="selectedHeaderItem">
+            <ng-template ng-header-tmp>
+              <div class="ng-dropdown-title">
+                Header
               </div>
-            </div>
-          </ng-template>
-          <ng-template ng-option-tmp
-                       let-item="item"
-                       let-item$="item$"
-                       let-index="index">
-            <span class="ng-option-label">{{ item.label }}</span>
-          </ng-template>
-        </ng-select>
+            </ng-template>
+            <ng-template ng-option-tmp
+                         let-item="item"
+                         let-item$="item$"
+                         let-index="index">
+              <span class="ng-option-label">{{ item.label }}</span>
+            </ng-template>
+          </ng-select>
 
-        <br>
+          <br>
 
-        Selected: {{ selectedSearchItem }}
+          Selected: {{ selectedHeaderItem }}
+        </div>
       </div>
-    </div>
 
-    <div class="my-5">
-      <h4 class="mb-3">Radio</h4>
-      <div class="border border-gray-300 rounded-top p-4">
-        <ng-select [items]="radioItems"
-                   bindValue="value"
-                   bindLabel="label"
-                   [placeholder]="'Radio'"
-                   [closeOnSelect]="true"
-                   [(ngModel)]="selectedRadioItem">
-          <ng-template ng-option-tmp
-                       let-item="item"
-                       let-item$="item$"
-                       let-index="index">
-            <div class="form-check mb-0">
-              <input id="item-{{ index }}"
-                     class="form-check-input"
-                     type="radio"
-                     name="selectRadio"
-                     [value]="item.value"
-                     [checked]="item$.selected">
-              <label class="form-check-label"
-                     for="item-{{ index }}">
-                {{ item.label }}
-              </label>
-            </div>
-          </ng-template>
-        </ng-select>
+      <div class="my-5">
+        <h4 class="mb-3">Search</h4>
+        <div class="border border-gray-300 rounded-top p-4">
+          <ng-select #selectSelect
+                     class="ng-select-header ng-select-search"
+                     [items]="searchItems"
+                     bindValue="value"
+                     bindLabel="label"
+                     [placeholder]="'Search'"
+                     [searchable]="false"
+                     [(ngModel)]="selectedSearchItem">
+            <ng-template ng-header-tmp>
+              <div class="ng-dropdown-title">
+                Header
+              </div>
+              <div class="ng-dropdown-search">
+                <div class="input-group input-search left">
+                  <span class="input-group-text">
+                    <i class="fas fa-search"></i>
+                  </span>
+                  <input class="form-control"
+                         type="text"
+                         [placeholder]="'Cari'"
+                         (input)="selectSelect.filter($event.target.value)" />
+                </div>
+              </div>
+            </ng-template>
+            <ng-template ng-option-tmp
+                         let-item="item"
+                         let-item$="item$"
+                         let-index="index">
+              <span class="ng-option-label">{{ item.label }}</span>
+            </ng-template>
+          </ng-select>
 
-        <br>
+          <br>
 
-        Selected: {{ selectedRadioItem }}
+          Selected: {{ selectedSearchItem }}
+        </div>
       </div>
-    </div>
 
-    <hr>
+      <div class="my-5">
+        <h4 class="mb-3">Radio</h4>
+        <div class="border border-gray-300 rounded-top p-4">
+          <ng-select [items]="radioItems"
+                     bindValue="value"
+                     bindLabel="label"
+                     [placeholder]="'Radio'"
+                     [closeOnSelect]="true"
+                     [(ngModel)]="selectedRadioItem">
+            <ng-template ng-option-tmp
+                         let-item="item"
+                         let-item$="item$"
+                         let-index="index">
+              <div class="form-check mb-0">
+                <input id="item-{{ index }}"
+                       class="form-check-input"
+                       type="radio"
+                       name="selectRadio"
+                       [value]="item.value"
+                       [checked]="item$.selected">
+                <label class="form-check-label"
+                       for="item-{{ index }}">
+                  {{ item.label }}
+                </label>
+              </div>
+            </ng-template>
+          </ng-select>
 
-    <div class="my-5">
-      <h2 class="mb-3">Multi select</h2>
-      <div class="border border-gray-300 rounded-top p-4">
-        <ng-select [items]="multiItems"
-                   bindValue="value"
-                   bindLabel="label"
-                   [placeholder]="'Multi select'"
-                   [multiple]="true"
-                   [(ngModel)]="selectedMultiItem">
-          <ng-template ng-label-tmp
-                       let-item="item"
-                       let-clear="clear">
-            <span class="ng-value-label">{{item.label}}</span>
-            <span class="ng-value-icon right"
-                  (click)="clear(item)"
-                  aria-hidden="true">×</span>
-          </ng-template>
-        </ng-select>
+          <br>
 
-        <br>
-
-        Selected: <br />
-        <ul>
-          <li *ngFor="let item of selectedMultiItem">{{item}}</li>
-        </ul>
+          Selected: {{ selectedRadioItem }}
+        </div>
       </div>
-    </div>
 
-    <div class="my-5">
-      <h4 class="mb-3">More</h4>
-      <div class="border border-gray-300 rounded-top p-4">
-        <ng-select [items]="multiMoreItems"
-                   bindValue="value"
-                   bindLabel="label"
-                   [placeholder]="'More'"
-                   [multiple]="true"
-                   [(ngModel)]="selectedMultiMoreItem">
-          <ng-template ng-multi-label-tmp
-                       let-items="items"
-                       let-clear="clear">
-            <div class="ng-value"
-                 *ngFor="let item of items.slice(0,2)">
-              <span class="ng-value-label">{{ item.label }}</span>
+      <hr>
+
+      <div class="my-5">
+        <h2 class="mb-3">Multi select</h2>
+        <div class="border border-gray-300 rounded-top p-4">
+          <ng-select [items]="multiItems"
+                     bindValue="value"
+                     bindLabel="label"
+                     [placeholder]="'Multi select'"
+                     [multiple]="true"
+                     [(ngModel)]="selectedMultiItem">
+            <ng-template ng-label-tmp
+                         let-item="item"
+                         let-clear="clear">
+              <span class="ng-value-label">{{item.label}}</span>
               <span class="ng-value-icon right"
                     (click)="clear(item)"
                     aria-hidden="true">×</span>
-            </div>
-            <div class="ng-value"
-                 *ngIf="items.length > 2">
-              <span class="ng-value-label">{{items.length - 2}} more...</span>
-            </div>
-          </ng-template>
-        </ng-select>
+            </ng-template>
+          </ng-select>
 
-        <br>
+          <br>
 
-        Selected: <br />
-        <ul>
-          <li *ngFor="let item of selectedMultiMoreItem">{{item}}</li>
-        </ul>
+          Selected: <br />
+          <ul>
+            <li *ngFor="let item of selectedMultiItem">{{item}}</li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="my-5">
-      <h4 class="mb-3">Group</h4>
-      <div class="border border-gray-300 rounded-top p-4">
-        <ng-select [items]="multiGroupItems"
-                   bindValue="value"
-                   bindLabel="label"
-                   [placeholder]="'Group'"
-                   [multiple]="true"
-                   [(ngModel)]="selectedMultiGroupItem">
-          <ng-template ng-multi-label-tmp
-                       let-items="items">
-            <div class="ng-value">
-              <span class="ng-value-label">
-                {{ items.length }} Selected
-              </span>
-            </div>
-          </ng-template>
-        </ng-select>
+      <div class="my-5">
+        <h4 class="mb-3">More</h4>
+        <div class="border border-gray-300 rounded-top p-4">
+          <ng-select [items]="multiMoreItems"
+                     bindValue="value"
+                     bindLabel="label"
+                     [placeholder]="'More'"
+                     [multiple]="true"
+                     [(ngModel)]="selectedMultiMoreItem">
+            <ng-template ng-multi-label-tmp
+                         let-items="items"
+                         let-clear="clear">
+              <div class="ng-value"
+                   *ngFor="let item of items.slice(0,2)">
+                <span class="ng-value-label">{{ item.label }}</span>
+                <span class="ng-value-icon right"
+                      (click)="clear(item)"
+                      aria-hidden="true">×</span>
+              </div>
+              <div class="ng-value"
+                   *ngIf="items.length > 2">
+                <span class="ng-value-label">{{items.length - 2}} more...</span>
+              </div>
+            </ng-template>
+          </ng-select>
 
-        <br>
+          <br>
 
-        Selected: <br />
-        <ul>
-          <li *ngFor="let item of selectedMultiGroupItem">{{item}}</li>
-        </ul>
+          Selected: <br />
+          <ul>
+            <li *ngFor="let item of selectedMultiMoreItem">{{item}}</li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="my-5">
-      <h4 class="mb-3">Checkbox</h4>
-      <div class="border border-gray-300 rounded-top p-4">
-        <ng-select [items]="multiCheckboxItems"
-                   bindValue="value"
-                   bindLabel="label"
-                   [placeholder]="'Checkbox'"
-                   [multiple]="true"
-                   [(ngModel)]="selectedMultiCheckboxItem">
-          <ng-template ng-option-tmp
-                       let-item="item"
-                       let-item$="item$"
-                       let-index="index">
-            <div class="form-check mb-0">
-              <input id="item-{{ index }}"
-                     class="form-check-input"
-                     type="checkbox"
-                     name="selectCheckbox"
-                     [ngModel]="item$.selected">
-              <label class="form-check-label"
-                     for="item-{{ index }}">
-                {{ item.label }}
-              </label>
-            </div>
-          </ng-template>
-          <ng-template ng-label-tmp
-                       let-item="item"
-                       let-clear="clear">
-            <span class="ng-value-label">{{item.label}}</span>
-            <span class="ng-value-icon right"
-                  (click)="clear(item)"
-                  aria-hidden="true">×</span>
-          </ng-template>
-        </ng-select>
+      <div class="my-5">
+        <h4 class="mb-3">Group</h4>
+        <div class="border border-gray-300 rounded-top p-4">
+          <ng-select [items]="multiGroupItems"
+                     bindValue="value"
+                     bindLabel="label"
+                     [placeholder]="'Group'"
+                     [multiple]="true"
+                     [(ngModel)]="selectedMultiGroupItem">
+            <ng-template ng-multi-label-tmp
+                         let-items="items">
+              <div class="ng-value">
+                <span class="ng-value-label">
+                  {{ items.length }} Selected
+                </span>
+              </div>
+            </ng-template>
+          </ng-select>
 
-        <br>
+          <br>
 
-        Selected: <br />
-        <ul>
-          <li *ngFor="let item of selectedMultiCheckboxItem">{{item}}</li>
-        </ul>
+          Selected: <br />
+          <ul>
+            <li *ngFor="let item of selectedMultiGroupItem">{{item}}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="my-5">
+        <h4 class="mb-3">Checkbox</h4>
+        <div class="border border-gray-300 rounded-top p-4">
+          <ng-select [items]="multiCheckboxItems"
+                     bindValue="value"
+                     bindLabel="label"
+                     [placeholder]="'Checkbox'"
+                     [multiple]="true"
+                     [(ngModel)]="selectedMultiCheckboxItem">
+            <ng-template ng-option-tmp
+                         let-item="item"
+                         let-item$="item$"
+                         let-index="index">
+              <div class="form-check mb-0">
+                <input id="item-{{ index }}"
+                       class="form-check-input"
+                       type="checkbox"
+                       name="selectCheckbox"
+                       [ngModel]="item$.selected">
+                <label class="form-check-label"
+                       for="item-{{ index }}">
+                  {{ item.label }}
+                </label>
+              </div>
+            </ng-template>
+            <ng-template ng-label-tmp
+                         let-item="item"
+                         let-clear="clear">
+              <span class="ng-value-label">{{item.label}}</span>
+              <span class="ng-value-icon right"
+                    (click)="clear(item)"
+                    aria-hidden="true">×</span>
+            </ng-template>
+          </ng-select>
+
+          <br>
+
+          Selected: <br />
+          <ul>
+            <li *ngFor="let item of selectedMultiCheckboxItem">{{item}}</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
