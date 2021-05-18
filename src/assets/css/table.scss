@@ -131,7 +131,7 @@
     @include media-breakpoint-up(lg) {
       .paging-info {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
 
         .paging-per-page {
           border-right: 1px solid $gray-200;

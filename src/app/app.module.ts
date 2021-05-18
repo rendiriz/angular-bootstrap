@@ -1,5 +1,5 @@
 import { NgModule, Inject, LOCALE_ID, PLATFORM_ID, APP_ID } from '@angular/core';
-import { BrowserModule, Title } from '@angular/platform-browser';
+import { BrowserModule, BrowserTransferStateModule, Title } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -12,6 +12,9 @@ import localeId from '@angular/common/locales/id';
 
 // SERVICE
 import { GlobalService } from '@services';
+
+// INTERCEPTOR
+import { TransferStateInterceptor } from '@interceptors';
 
 // MODULE
 import { AppRoutingModule } from './app-routing.module';
@@ -59,6 +62,7 @@ export function localizeLoaderFactory(
   imports: [
     BrowserModule.withServerTransition({ appId: 'angular-bootstrap' }),
     BrowserAnimationsModule,
+    BrowserTransferStateModule,
     RouterModule.forRoot(AppRoutingModule, {
       scrollPositionRestoration: 'top',
       initialNavigation: 'disabled',
@@ -86,6 +90,11 @@ export function localizeLoaderFactory(
     {
       provide: LOCALE_ID,
       useValue: 'id',
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TransferStateInterceptor,
+      multi: true,
     },
     Title,
     GlobalService,

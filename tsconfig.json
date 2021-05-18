@@ -46,6 +46,6 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true,
     "strictDomEventTypes": false,
-    "enableIvy": true
+    "enableIvy": false
   }
 }
