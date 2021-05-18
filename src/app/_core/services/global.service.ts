@@ -8,6 +8,12 @@ export class GlobalService {
 
   readonly title: string = 'This Title';
 
+  private sidebarSource = new BehaviorSubject('This Sidebar');
+  currentSidebar = this.sidebarSource.asObservable();
+
+  private toggleSidebarSource = new BehaviorSubject(false);
+  currentToggleSidebar = this.toggleSidebarSource.asObservable();
+
   private labelSource = new BehaviorSubject('This Label');
   currentLabel = this.labelSource.asObservable();
 
@@ -16,6 +22,14 @@ export class GlobalService {
 
   private breadcrumbSource = new BehaviorSubject([]);
   currentBreadcrumb = this.breadcrumbSource.asObservable();
+
+  changeSidebar(sidebar: string): void {
+    this.sidebarSource.next(sidebar);
+  }
+
+  changeToggleSidebar(toggleSidebar: boolean): void {
+    this.toggleSidebarSource.next(toggleSidebar);
+  }
 
   changeLabel(label: string): void {
     this.labelSource.next(label);

@@ -1,11 +1,23 @@
 import { Component } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+
+// SERVICE
+import { GlobalService } from '@services';
 
 @Component({
   selector: 'app-public-page',
-  template: `
-    <app-public-navbar></app-public-navbar>
-    <router-outlet></router-outlet>
-    <app-public-footer></app-public-footer>
-  `,
+  templateUrl: './page.component.html',
+  styleUrls: ['./page.component.scss'],
 })
-export class PageComponent {}
+export class PageComponent {
+  toggle!: boolean;
+  toggleEmitter$ = new BehaviorSubject<boolean>(this.toggle);
+
+  constructor(private globalService: GlobalService) {
+    this.globalService.currentToggleSidebar.subscribe((current) => {
+      console.log(current);
+      this.toggle = current;
+      this.toggleEmitter$.next(current);
+    });
+  }
+}

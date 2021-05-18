@@ -11,7 +11,7 @@ import { Location, registerLocaleData } from '@angular/common';
 import localeId from '@angular/common/locales/id';
 
 // SERVICE
-import { GlobalService } from '@services';
+import { GlobalService, SidebarService } from '@services';
 
 // INTERCEPTOR
 import { TransferStateInterceptor } from '@interceptors';
@@ -25,8 +25,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 
 // COMPONENT (PUBLIC)
+import { HomeComponent as PublicHomeComponent } from '@templates/public/container/home/home.component';
 import { PageComponent as PublicPageComponent } from '@templates/public/container/page/page.component';
 import { NavbarComponent as PublicNavbarComponent } from '@templates/public/navbar/navbar.component';
+import { SidebarComponent as PublicSidebarComponent } from '@templates/public/sidebar/sidebar.component';
 import { FooterComponent as PublicFooterComponent } from '@templates/public/footer/footer.component';
 
 // LOCALIZE
@@ -58,7 +60,14 @@ export function localizeLoaderFactory(
 }
 
 @NgModule({
-  declarations: [AppComponent, PublicPageComponent, PublicNavbarComponent, PublicFooterComponent],
+  declarations: [
+    AppComponent,
+    PublicHomeComponent,
+    PublicPageComponent,
+    PublicNavbarComponent,
+    PublicSidebarComponent,
+    PublicFooterComponent,
+  ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'angular-bootstrap' }),
     BrowserAnimationsModule,
@@ -98,6 +107,7 @@ export function localizeLoaderFactory(
     },
     Title,
     GlobalService,
+    SidebarService,
   ],
   bootstrap: [AppComponent],
 })

@@ -2,9 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LocalizeRouterModule } from '@gilsdav/ngx-translate-router';
 
+// RESOLVER
+import { SidebarComponentsResolver } from '@resolvers';
+
 const routes: Routes = [
   {
     path: '',
+    resolve: {
+      hero: SidebarComponentsResolver,
+    },
     children: [
       {
         path: '',

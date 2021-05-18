@@ -1,0 +1,15 @@
+<section class="public-sidebar">
+  <div class="bg-white">
+    <div class="sidebar-heading">
+      {{ titleEmitter$ | async }}
+    </div>
+    <div class="list-group list-group-flush">
+      <a *ngFor="let item of menuEmitter$ | async"
+         class="list-group-item list-group-item-action"
+         [routerLinkActive]="['active']"
+         [routerLink]="[item.link | localize]">
+        {{ item.name | translate }}
+      </a>
+    </div>
+  </div>
+</section>

@@ -12,7 +12,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 // SERVICE
-import { GlobalService } from '@services';
+import { GlobalService, SidebarService } from '@services';
 
 // PACKAGE
 import * as _ from 'lodash';
@@ -34,12 +34,16 @@ export class FoundationsPageComponent implements OnInit, OnChanges, OnDestroy, A
   description!: string;
   breadcrumb!: any[];
 
+  // Variable
+  menu!: any[];
+
   constructor(
     private cdRef: ChangeDetectorRef,
     private router: Router,
     private route: ActivatedRoute,
     private titleService: Title,
     private globalService: GlobalService,
+    private sidebarService: SidebarService,
     private translateService: TranslateService
   ) {
     this.settingsAll();
@@ -62,7 +66,9 @@ export class FoundationsPageComponent implements OnInit, OnChanges, OnDestroy, A
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.menu = this.sidebarService.getFoundations();
+  }
 
   ngOnChanges(changes: SimpleChanges): void {}
 

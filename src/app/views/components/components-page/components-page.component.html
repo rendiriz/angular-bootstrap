@@ -2,153 +2,21 @@
   <app-header-page [label]="label"
                    [description]="description"></app-header-page>
 
-  <div class="container-fluid">
-    <div class="my-4">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Breadcrumbs</h5>
-              <p class="card-text">
-                Breadcrumbs are a navigation system used to show a user's location in a site or app.
-              </p>
-              <a [routerLink]="['/components/breadcrumbs' | localize]">More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Button</h5>
-              <p class="card-text">
-                A button triggers an event or action. They let users know what will happen next.
-              </p>
-              <a [routerLink]="['/components/button' | localize]">More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Checkbox</h5>
-              <p class="card-text">
-                A checkbox is an input control that allows a user to select one or more options from a number
-                of choices.
-              </p>
-              <a [routerLink]="['/components/checkbox' | localize]">More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Dropdown Menu</h5>
-              <p class="card-text">
-                A dropdown menu displays a list of actions or options to a user.
-              </p>
-              <a [routerLink]="['/components/dropdown-menu' | localize]">More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Pagination</h5>
-              <p class="card-text">
-                Pagination allows you to divide large amounts of content into smaller chunks across multiple
-                pages.
-              </p>
-              <a [routerLink]="['/components/pagination' | localize]">More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Radio</h5>
-              <p class="card-text">
-                A radio input allows people to select only one option from a number of choices. Radio is
-                generally displayed in a radio group.
-              </p>
-              <a [routerLink]="['/components/radio' | localize]">More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Section Message</h5>
-              <p class="card-text">
-                A section message is used to alert users to a particular section of the screen.
-              </p>
-              <a [routerLink]="['/components/section-message' | localize]">More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Select</h5>
-              <p class="card-text">
-                Select allows users to make a single selection or multiple selections from a list of options.
-              </p>
-              <a [routerLink]="['/components/select' | localize]">More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Table</h5>
-              <p class="card-text">
-                Table.
-              </p>
-              <a [routerLink]="['/components/table' | localize]">More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Tabs</h5>
-              <p class="card-text">
-                Tabs are used to organize content by grouping similar information on the same page.
-              </p>
-              <a [routerLink]="['/components/tabs' | localize]">More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Text field</h5>
-              <p class="card-text">
-                A text field is an input that allows a user to write or edit text.
-              </p>
-              <a [routerLink]="['/components/textfield' | localize]">More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Tooltip</h5>
-              <p class="card-text">
-                A tooltip is a floating, non-actionable label used to explain a user interface element or
-                feature.
-              </p>
-              <a [routerLink]="['/components/tooltip' | localize]">More</a>
+  <div class="main-page">
+    <div class="container">
+      <div class="my-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div *ngFor="let item of menu"
+               class="col">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{ item.name | translate }}</h5>
+                <p class="card-text text-truncate-4-row">
+                  {{ 'seo.' + item.name + '-page.description' | translate }}
+                </p>
+                <a class="link-green mt-auto"
+                   [routerLink]="[item.link | localize]">More</a>
+              </div>
             </div>
           </div>
         </div>

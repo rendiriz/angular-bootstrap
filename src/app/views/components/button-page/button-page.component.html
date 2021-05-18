@@ -2,132 +2,134 @@
   <app-header-page [label]="label"
                    [description]="description"></app-header-page>
 
-  <div class="container-fluid">
-    <div class="my-5">
-      <div class="border border-gray-300 rounded-top p-4">
-        <div>
-          <button type="button"
-                  class="btn btn-primary">Primary</button>
-          <button type="button"
-                  class="btn btn-secondary ms-2">Secondary</button>
-          <button type="button"
-                  class="btn btn-success ms-2">Success</button>
-          <button type="button"
-                  class="btn btn-danger ms-2">Danger</button>
-          <button type="button"
-                  class="btn btn-warning ms-2">Warning</button>
-          <button type="button"
-                  class="btn btn-info ms-2">Info</button>
-          <button type="button"
-                  class="btn btn-link link-green text-decoration-none ms-2">Link</button>
-        </div>
+  <div class="main-page">
+    <div class="container">
+      <div class="my-5">
+        <div class="border border-gray-300 rounded-top p-4">
+          <div>
+            <button type="button"
+                    class="btn btn-primary">Primary</button>
+            <button type="button"
+                    class="btn btn-secondary ms-2">Secondary</button>
+            <button type="button"
+                    class="btn btn-success ms-2">Success</button>
+            <button type="button"
+                    class="btn btn-danger ms-2">Danger</button>
+            <button type="button"
+                    class="btn btn-warning ms-2">Warning</button>
+            <button type="button"
+                    class="btn btn-info ms-2">Info</button>
+            <button type="button"
+                    class="btn btn-link link-green text-decoration-none ms-2">Link</button>
+          </div>
 
-        <div class="mt-3">
+          <div class="mt-3">
+            <button type="button"
+                    class="btn btn-yellow">Yellow</button>
+            <button type="button"
+                    class="btn btn-green ms-2">Green</button>
+            <button type="button"
+                    class="btn btn-blue ms-2">Blue</button>
+            <button type="button"
+                    class="btn btn-pink ms-2">Pink</button>
+            <button type="button"
+                    class="btn btn-red ms-2">Red</button>
+            <button type="button"
+                    class="btn btn-purple ms-2">Purple</button>
+            <button type="button"
+                    class="btn btn-gray ms-2">Gray</button>
+            <button type="button"
+                    class="btn btn-blue-gray ms-2">Blue Gray</button>
+          </div>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+        {{ codeButton }}
+      </textarea>
+      </div>
+
+      <hr>
+
+      <div class="my-5">
+        <h2 class="mb-3">Outline buttons</h2>
+        <div class="border border-gray-300 rounded-top p-4">
+          <div>
+            <button type="button"
+                    class="btn btn-outline-primary">Primary</button>
+            <button type="button"
+                    class="btn btn-outline-secondary ms-2">Secondary</button>
+            <button type="button"
+                    class="btn btn-outline-success ms-2">Success</button>
+            <button type="button"
+                    class="btn btn-outline-danger ms-2">Danger</button>
+            <button type="button"
+                    class="btn btn-outline-warning ms-2">Warning</button>
+            <button type="button"
+                    class="btn btn-outline-info ms-2">Info</button>
+          </div>
+
+          <div class="mt-3">
+            <button type="button"
+                    class="btn btn-outline-yellow">Yellow</button>
+            <button type="button"
+                    class="btn btn-outline-green ms-2">Green</button>
+            <button type="button"
+                    class="btn btn-outline-blue ms-2">Blue</button>
+            <button type="button"
+                    class="btn btn-outline-pink ms-2">Pink</button>
+            <button type="button"
+                    class="btn btn-outline-red ms-2">Red</button>
+            <button type="button"
+                    class="btn btn-outline-purple ms-2">Purple</button>
+            <button type="button"
+                    class="btn btn-outline-gray ms-2">Gray</button>
+            <button type="button"
+                    class="btn btn-outline-blue-gray ms-2">Blue Gray</button>
+          </div>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+        {{ codeOutline }}
+      </textarea>
+      </div>
+
+      <hr>
+
+      <div class="my-5">
+        <h2 class="mb-3">Sizes</h2>
+        <div class="border border-gray-300 rounded-top p-4">
           <button type="button"
-                  class="btn btn-yellow">Yellow</button>
+                  class="btn btn-lg btn-green">Green</button>
           <button type="button"
                   class="btn btn-green ms-2">Green</button>
           <button type="button"
-                  class="btn btn-blue ms-2">Blue</button>
-          <button type="button"
-                  class="btn btn-pink ms-2">Pink</button>
-          <button type="button"
-                  class="btn btn-red ms-2">Red</button>
-          <button type="button"
-                  class="btn btn-purple ms-2">Purple</button>
-          <button type="button"
-                  class="btn btn-gray ms-2">Gray</button>
-          <button type="button"
-                  class="btn btn-blue-gray ms-2">Blue Gray</button>
+                  class="btn btn-sm btn-green ms-2">Green</button>
         </div>
-      </div>
-      <textarea highlight-js
-                [lang]="'html'">
-        {{ codeButton }}
-      </textarea>
-    </div>
-
-    <hr>
-
-    <div class="my-5">
-      <h2 class="mb-3">Outline buttons</h2>
-      <div class="border border-gray-300 rounded-top p-4">
-        <div>
-          <button type="button"
-                  class="btn btn-outline-primary">Primary</button>
-          <button type="button"
-                  class="btn btn-outline-secondary ms-2">Secondary</button>
-          <button type="button"
-                  class="btn btn-outline-success ms-2">Success</button>
-          <button type="button"
-                  class="btn btn-outline-danger ms-2">Danger</button>
-          <button type="button"
-                  class="btn btn-outline-warning ms-2">Warning</button>
-          <button type="button"
-                  class="btn btn-outline-info ms-2">Info</button>
-        </div>
-
-        <div class="mt-3">
-          <button type="button"
-                  class="btn btn-outline-yellow">Yellow</button>
-          <button type="button"
-                  class="btn btn-outline-green ms-2">Green</button>
-          <button type="button"
-                  class="btn btn-outline-blue ms-2">Blue</button>
-          <button type="button"
-                  class="btn btn-outline-pink ms-2">Pink</button>
-          <button type="button"
-                  class="btn btn-outline-red ms-2">Red</button>
-          <button type="button"
-                  class="btn btn-outline-purple ms-2">Purple</button>
-          <button type="button"
-                  class="btn btn-outline-gray ms-2">Gray</button>
-          <button type="button"
-                  class="btn btn-outline-blue-gray ms-2">Blue Gray</button>
-        </div>
-      </div>
-      <textarea highlight-js
-                [lang]="'html'">
-        {{ codeOutline }}
-      </textarea>
-    </div>
-
-    <hr>
-
-    <div class="my-5">
-      <h2 class="mb-3">Sizes</h2>
-      <div class="border border-gray-300 rounded-top p-4">
-        <button type="button"
-                class="btn btn-lg btn-green">Green</button>
-        <button type="button"
-                class="btn btn-green ms-2">Green</button>
-        <button type="button"
-                class="btn btn-sm btn-green ms-2">Green</button>
-      </div>
-      <textarea highlight-js
-                [lang]="'html'">
+        <textarea highlight-js
+                  [lang]="'html'">
         {{ codeSize }}
       </textarea>
-    </div>
-
-    <hr>
-
-    <div class="my-5">
-      <h2 class="mb-3">Icon</h2>
-      <div class="border border-gray-300 rounded-top p-4">
-        <button type="button"
-                class="btn btn-green">
-          Green <i class="fas fa-user ms-2"></i>
-        </button>
-        <button type="button"
-                class="btn btn-green ms-2">
-          <i class="fas fa-user me-2"></i> Green
-        </button>
       </div>
-      <textarea highlight-js
-                [lang]="'html'">
+
+      <hr>
+
+      <div class="my-5">
+        <h2 class="mb-3">Icon</h2>
+        <div class="border border-gray-300 rounded-top p-4">
+          <button type="button"
+                  class="btn btn-green">
+            Green <i class="fas fa-user ms-2"></i>
+          </button>
+          <button type="button"
+                  class="btn btn-green ms-2">
+            <i class="fas fa-user me-2"></i> Green
+          </button>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
         {{ codeIcon }}
       </textarea>
+      </div>
     </div>
   </div>
 </section>

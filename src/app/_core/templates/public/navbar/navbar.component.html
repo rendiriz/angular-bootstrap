@@ -5,16 +5,22 @@
          [routerLink]="['/' | localize]">
         Angular Bootstrap
       </a>
-      <button class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              (click)="isMenuCollapsed = !isMenuCollapsed">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="me-lg-2">
+        <button class="toggler-navbar btn btn-outline-gray-300 me-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                (click)="isMenuCollapsed = !isMenuCollapsed">
+          <i class="fas fa-project-diagram"></i>
+        </button>
+        <button class="toggler-sidebar btn btn-outline-gray-300"
+                (click)="toggleSidebar()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
       <div [ngbCollapse]="isMenuCollapsed"
            class="collapse navbar-collapse"
            id="navbarSupportedContent">
