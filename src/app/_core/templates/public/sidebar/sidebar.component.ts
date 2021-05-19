@@ -8,7 +8,7 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
 } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
@@ -30,7 +30,8 @@ import { LocalizeRouterService } from '@gilsdav/ngx-translate-router';
 export class SidebarComponent implements OnInit, OnChanges, OnDestroy, AfterViewInit {
   moment: any = moment;
 
-  public isMenuCollapsed = true;
+  currentRoute!: any;
+  routeEmitter$ = new BehaviorSubject<any>(this.currentRoute);
 
   title!: string;
   titleEmitter$ = new BehaviorSubject<string>(this.title);
@@ -41,6 +42,7 @@ export class SidebarComponent implements OnInit, OnChanges, OnDestroy, AfterView
   constructor(
     private cdRef: ChangeDetectorRef,
     private router: Router,
+    private activatedRoute: ActivatedRoute,
     private globalService: GlobalService,
     private sidebarService: SidebarService,
     private translateService: TranslateService,
@@ -49,6 +51,7 @@ export class SidebarComponent implements OnInit, OnChanges, OnDestroy, AfterView
     this.globalService.currentSidebar.subscribe((current) => {
       this.title = current;
       this.titleEmitter$.next(current);
+      this.routeEmitter$.next(null);
     });
 
     this.sidebarService.currentSidebar.subscribe((current) => {
@@ -57,11 +60,20 @@ export class SidebarComponent implements OnInit, OnChanges, OnDestroy, AfterView
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.routeEmitter$.next(this.router.url.split('/')[3]);
+  }
 
   ngOnChanges(changes: SimpleChanges): void {}
 
   ngOnDestroy(): void {}
 
   ngAfterViewInit(): void {}
+
+  redirectTo(link: string): void {
+    const tempTranslatedPath: any = this.localize.translateRoute(link);
+    this.router.navigate([tempTranslatedPath]).then(() => {
+      this.routeEmitter$.next(this.router.url.split('/')[3]);
+    });
+  }
 }

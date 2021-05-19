@@ -1,11 +1,5 @@
-<span class="component-avatar"
-      [style.height.px]="size"
-      [style.width.px]="size"
-      [ngClass]="{
-        'circle': appearance === 'circle',
-        'square': appearance === 'square'
-      }">
-  <ng-container *ngIf="src === ''; else isSrc">
+<span [ngClass]="className.main">
+  <ng-container *ngIf="(defaultInputs$ | async).src === ''; else isSrc">
     <span>
       <span role="presentation">
         <svg version="1.1"
@@ -14,8 +8,6 @@
              xmlns:xlink="http://www.w3.org/1999/xlink"
              x="0px"
              y="0px"
-             [style.height.px]="size"
-             [style.width.px]="size"
              viewBox="0 -75 512 512"
              enable-background="new 0 0 512 512"
              xml:space="preserve">
@@ -31,8 +23,6 @@
     </span>
   </ng-container>
   <ng-template #isSrc>
-    <span role="image"
-          class="image"
-          [style.backgroundImage]="'url('+ src +')'"></span>
+    <span role="image"></span>
   </ng-template>
 </span>

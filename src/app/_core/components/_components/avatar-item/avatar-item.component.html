@@ -1,20 +1,12 @@
-<div class="component-avatar-item d-flex">
+<div [ngClass]="className.main">
   <ng-template #dynamicComponent></ng-template>
-  <div class="d-flex flex-column justify-content-center ms-2">
+  <div [ngClass]="className.item">
     <div *ngIf="primaryText"
-         class="primary"
-         [ngClass]="{
-           'text-truncate-1-row': isTruncation
-         }"
-         [style.whiteSpace]="!isTruncation ? 'nowrap' : null">
+         [ngClass]="className.primary">
       {{ primaryText }}
     </div>
     <div *ngIf="secondaryText"
-         class="secondary text-secondary"
-         [ngClass]="{
-          'text-truncate-1-row': isTruncation
-         }"
-         [style.whiteSpace]="!isTruncation ? 'nowrap' : null">
+         [ngClass]="className.secondary">
       {{ secondaryText }}
     </div>
   </div>

@@ -35,7 +35,44 @@ export class AvatarItemPageComponent implements OnInit, OnChanges, OnDestroy, Af
   breadcrumb!: any[];
 
   // Variable
-  codeDefault = `<app-comp-avatar></app-comp-avatar>`;
+  codePrimary = `<app-comp-avatar-item
+  primaryText="Mike Cannon-Brookes"
+  [avatar]="{
+    appearance: 'circle',
+    size: 46,
+    src: 'assets/images/user-img.jpeg'
+  }">
+</app-comp-avatar-item>`;
+
+  codeSecondary = `<app-comp-avatar-item
+  secondaryText="CEO@angular-bootstrap.com"
+  [avatar]="{
+    appearance: 'circle',
+    size: 46,
+    src: 'assets/images/user-img.jpeg'
+  }">
+</app-comp-avatar-item>`;
+
+  codeComposing = `<app-comp-avatar-item
+  primaryText="Mike Cannon-Brookes"
+  secondaryText="CEO@angular-bootstrap.com"
+  [avatar]="{
+    appearance: 'circle',
+    size: 46,
+    src: 'assets/images/user-img.jpeg'
+  }">
+</app-comp-avatar-item>`;
+
+  codeTruncation = `<app-comp-avatar-item
+  primaryText="Mike Cannon-Brookes"
+  secondaryText="CEO@angular-bootstrap.com"
+  [isTruncation]="true"
+  [avatar]="{
+    appearance: 'circle',
+    size: 46,
+    src: 'assets/images/user-img.jpeg'
+  }">
+</app-comp-avatar-item>`;
 
   constructor(
     private cdRef: ChangeDetectorRef,

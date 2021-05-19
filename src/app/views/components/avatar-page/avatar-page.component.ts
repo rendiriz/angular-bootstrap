@@ -37,12 +37,21 @@ export class AvatarPageComponent implements OnInit, OnChanges, OnDestroy, AfterV
   // Variable
   codeDefault = `<app-comp-avatar></app-comp-avatar>`;
 
-  codeCircle = `<app-comp-avatar appearance="circle" src="assets/images/user-img.jpeg"></app-comp-avatar>`;
-
-  codeSquare = `<app-comp-avatar appearance="square" src="https://www.searchpng.com/wp-content/uploads/2019/01/Rocket-Icon-PNG-715x715.png">
+  codeCircle = `<app-comp-avatar
+  appearance="circle"
+  src="assets/images/user-img.jpeg">
 </app-comp-avatar>`;
 
-  codeSize = `<app-comp-avatar appearance="circle" src="assets/images/user-img.jpeg" [size]="64"></app-comp-avatar>`;
+  codeSquare = `<app-comp-avatar
+  appearance="square"
+  src="https://www.searchpng.com/wp-content/uploads/2019/01/Rocket-Icon-PNG-715x715.png">
+</app-comp-avatar>`;
+
+  codeSize = `<app-comp-avatar
+  appearance="circle"
+  src="assets/images/user-img.jpeg"
+  [size]="64">
+</app-comp-avatar>`;
 
   constructor(
     private cdRef: ChangeDetectorRef,
