@@ -19,6 +19,8 @@
   "ROUTES.tabs": "tabs",
   "ROUTES.textfield": "textfield",
   "ROUTES.tooltip": "tooltip",
+  "ROUTES.examples": "examples",
+  "ROUTES.navbar": "navbar",
   "home": "Home",
   "foundations": "Foundations",
   "color": "Color",
@@ -38,6 +40,8 @@
   "tabs": "Tabs",
   "textfield": "Text field",
   "tooltip": "Tooltip",
+  "examples": "Examples",
+  "navbar": "Navbar",
   "seo": {
     "home-page": {
       "title": "Home",
@@ -114,6 +118,14 @@
     "tooltip-page": {
       "title": "Tooltip",
       "description": "A tooltip is a floating, non-actionable label used to explain a user interface element or feature."
+    },
+    "examples-page": {
+      "title": "Examples",
+      "description": "Examples."
+    },
+    "navbar-page": {
+      "title": "Navbar",
+      "description": "Navbar."
     }
   }
 }

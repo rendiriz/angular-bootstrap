@@ -50,4 +50,10 @@ export class SidebarService {
 
     return menu;
   }
+
+  getExamples(): any {
+    const menu = [{ name: 'navbar', link: '/examples/navbar' }];
+
+    return menu;
+  }
 }

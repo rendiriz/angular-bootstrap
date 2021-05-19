@@ -1,0 +1,17 @@
+.navbar-page {
+  .navbar {
+    padding: 0.75rem 0;
+  }
+
+  @media (min-width: 992px) {
+    .navbar-expand-lg .toggler-navbar {
+      display: none;
+    }
+  }
+}
+
+::ng-deep .navbar-page {
+  .hljs {
+    height: 450px;
+  }
+}
