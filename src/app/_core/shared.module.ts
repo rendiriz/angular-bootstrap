@@ -11,6 +11,9 @@ import { HighlightJsModule } from 'ngx-highlight-js';
 import { NgSelectModule } from '@ng-select/ng-select';
 
 // COMPONENT
+import { AvatarComponent as CompAvatarComponent } from '@components/_components/avatar/avatar.component';
+import { AvatarItemComponent as CompAvatarItemComponent } from '@components/_components/avatar-item/avatar-item.component';
+
 import { PageComponent as HeaderPageComponent } from '@components/header/page/page.component';
 
 @NgModule({
@@ -28,6 +31,8 @@ import { PageComponent as HeaderPageComponent } from '@components/header/page/pa
   ],
   declarations: [
     // COMPONENT
+    CompAvatarComponent,
+    CompAvatarItemComponent,
     HeaderPageComponent,
   ],
   exports: [
@@ -41,6 +46,8 @@ import { PageComponent as HeaderPageComponent } from '@components/header/page/pa
     HighlightJsModule,
     NgSelectModule,
     // COMPONENT
+    CompAvatarComponent,
+    CompAvatarItemComponent,
     HeaderPageComponent,
   ],
   providers: [],

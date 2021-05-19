@@ -5,6 +5,8 @@
   "ROUTES.color": "color",
   "ROUTES.typography": "typography",
   "ROUTES.components": "components",
+  "ROUTES.avatar": "avatar",
+  "ROUTES.avatar-item": "avatar-item",
   "ROUTES.breadcrumbs": "breadcrumbs",
   "ROUTES.button": "button",
   "ROUTES.checkbox": "checkbox",
@@ -22,6 +24,8 @@
   "color": "Color",
   "typography": "Typography",
   "components": "Components",
+  "avatar": "Avatar",
+  "avatar-item": "Avatar Item",
   "breadcrumbs": "Breadcrumbs",
   "button": "Button",
   "checkbox": "Checkbox",
@@ -54,6 +58,14 @@
     "components-page": {
       "title": "Components",
       "description": "Components are the reusable building blocks of our design system. Each component meets a specific interaction or UI need, and has been specifically created to work together to create patterns and intuitive user experiences."
+    },
+    "avatar-page": {
+      "title": "Avatar",
+      "description": "An avatar is a visual representation of a user or entity."
+    },
+    "avatar-item-page": {
+      "title": "Avatar Item",
+      "description": "An avatar item is a wrapper that goes around an avatar when it's displayed alongside text, such as a name or status."
     },
     "breadcrumbs-page": {
       "title": "Breadcrumbs",

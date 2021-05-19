@@ -1,0 +1,13 @@
+<div [ngClass]="className.main">
+  <ng-template #dynamicComponent></ng-template>
+  <div [ngClass]="className.item">
+    <div *ngIf="primaryText"
+         [ngClass]="className.primary">
+      {{ primaryText }}
+    </div>
+    <div *ngIf="secondaryText"
+         [ngClass]="className.secondary">
+      {{ secondaryText }}
+    </div>
+  </div>
+</div>

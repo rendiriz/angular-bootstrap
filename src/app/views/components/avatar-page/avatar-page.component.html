@@ -1,0 +1,61 @@
+<section class="avatar-page">
+  <app-header-page [label]="label"
+                   [description]="description"></app-header-page>
+
+  <div class="main-page">
+    <div class="container">
+      <div class="my-5">
+        <div class="border border-gray-300 rounded-top p-4">
+          <app-comp-avatar></app-comp-avatar>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeDefault }}
+        </textarea>
+      </div>
+
+      <hr>
+
+      <div class="my-5">
+        <h3 class="mb-3">Appearance</h3>
+        <h5 class="mb-3">Circle</h5>
+        <div class="border border-gray-300 rounded-top p-4">
+          <app-comp-avatar appearance="circle"
+                           src="assets/images/user-img.jpeg"></app-comp-avatar>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeCircle }}
+        </textarea>
+
+        <br>
+
+        <h5 class="mb-3">Square</h5>
+        <div class="border border-gray-300 rounded-top p-4">
+          <app-comp-avatar appearance="square"
+                           src="https://www.searchpng.com/wp-content/uploads/2019/01/Rocket-Icon-PNG-715x715.png">
+          </app-comp-avatar>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeSquare }}
+        </textarea>
+      </div>
+
+      <hr>
+
+      <div class="my-5">
+        <h3 class="mb-3">Size</h3>
+        <div class="border border-gray-300 rounded-top p-4">
+          <app-comp-avatar appearance="circle"
+                           src="assets/images/user-img.jpeg"
+                           [size]="64"></app-comp-avatar>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeSize }}
+        </textarea>
+      </div>
+    </div>
+  </div>
+</section>

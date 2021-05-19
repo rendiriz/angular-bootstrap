@@ -10,10 +10,17 @@ Run `npm run dev` for a dev server. Navigate to `http://localhost:4200/`. The ap
 
 Run `npm run build:dev` for a dev server & `npm run build:prod` for a prod server. The build artifacts will be stored in the `dist/out` directory.
 
+## Feature
+
+- Angular Universal
+- CSS-in-JS
+- NgRx
+
 ## Custom
 
 - Color
 - Typography
+- Avatar
 - Breadcrumbs
 - Button
 - Checkbox
@@ -31,6 +38,7 @@ Run `npm run build:dev` for a dev server & `npm run build:prod` for a prod serve
 
 - [Bootstrap](https://getbootstrap.com/)
 - [ng-bootstrap](https://ng-bootstrap.github.io/)
+- [emotion](https://emotion.sh/)
 - [Lodash](https://lodash.com/)
 - [Moment.js](https://momentjs.com/)
 - [zalog](https://github.com/zalog)/[placeholder-loading](https://github.com/zalog/placeholder-loading)
