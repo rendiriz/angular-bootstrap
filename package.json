@@ -39,7 +39,7 @@
     "@ngx-loading-bar/router": "^5.1.2",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
-    "bootstrap": "^5.0.0",
+    "bootstrap": "^5.0.1",
     "express": "^4.15.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",

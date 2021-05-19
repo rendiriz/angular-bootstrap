@@ -37,6 +37,10 @@ export const AppRoutingModule: Routes = [
         path: 'components',
         loadChildren: () => import('./views/components/components.module').then((m) => m.ComponentsModule),
       },
+      {
+        path: 'examples',
+        loadChildren: () => import('./views/examples/examples.module').then((m) => m.ExamplesModule),
+      },
     ],
   },
 ];
