@@ -24,6 +24,7 @@ export class SidebarService {
 
   getComponents(): any {
     const menu = [
+      { name: 'avatar', link: '/components/avatar' },
       { name: 'breadcrumbs', link: '/components/breadcrumbs' },
       { name: 'button', link: '/components/button' },
       { name: 'checkbox', link: '/components/checkbox' },

@@ -15,7 +15,6 @@ export class PageComponent {
 
   constructor(private globalService: GlobalService) {
     this.globalService.currentToggleSidebar.subscribe((current) => {
-      console.log(current);
       this.toggle = current;
       this.toggleEmitter$.next(current);
     });

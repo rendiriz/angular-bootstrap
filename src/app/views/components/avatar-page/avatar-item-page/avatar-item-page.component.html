@@ -1,0 +1,74 @@
+<section class="avatar-item-page">
+  <app-header-page [label]="label"
+                   [description]="description"></app-header-page>
+
+  <div class="main-page">
+    <div class="container">
+      <div class="my-5">
+        <h3 class="mb-3">Text</h3>
+        <h5 class="mb-3">Primary</h5>
+        <div class="border border-gray-300 rounded-top p-4">
+          <app-comp-avatar-item primaryText="Mike Cannon-Brookes"
+                                [avatar]="{ appearance: 'circle', size: 46, src: 'assets/images/user-img.jpeg' }">
+          </app-comp-avatar-item>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeDefault }}
+        </textarea>
+
+        <br>
+
+        <h5 class="mb-3">Secondary</h5>
+        <div class="border border-gray-300 rounded-top p-4">
+          <app-comp-avatar-item secondaryText="CEO@angular-bootstrap.com"
+                                [avatar]="{ appearance: 'circle', size: 46, src: 'assets/images/user-img.jpeg' }">
+          </app-comp-avatar-item>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeDefault }}
+        </textarea>
+
+        <br>
+
+        <h5 class="mb-3">Composing Text</h5>
+        <div class="border border-gray-300 rounded-top p-4">
+          <app-comp-avatar-item primaryText="Mike Cannon-Brookes"
+                                secondaryText="CEO@angular-bootstrap.com"
+                                [avatar]="{ appearance: 'circle', size: 46, src: 'assets/images/user-img.jpeg' }">
+          </app-comp-avatar-item>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeDefault }}
+        </textarea>
+
+        <br>
+
+        <h5 class="mb-3">Truncation</h5>
+        <div class="border border-gray-300 rounded-top p-4">
+          <div class="w-180px border border-pink p-1 mb-3">
+            <app-comp-avatar-item primaryText="Mike Cannon-Brookes"
+                                  secondaryText="CEO@angular-bootstrap.com"
+                                  [isTruncation]="true"
+                                  [avatar]="{ appearance: 'circle', size: 46, src: 'assets/images/user-img.jpeg' }">
+            </app-comp-avatar-item>
+          </div>
+
+          <div class="w-180px border border-pink p-1">
+            <app-comp-avatar-item primaryText="Mike Cannon-Brookes"
+                                  secondaryText="CEO@angular-bootstrap.com"
+                                  [isTruncation]="false"
+                                  [avatar]="{ appearance: 'circle', size: 46, src: 'assets/images/user-img.jpeg' }">
+            </app-comp-avatar-item>
+          </div>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeDefault }}
+        </textarea>
+      </div>
+    </div>
+  </div>
+</section>

@@ -18,6 +18,10 @@ const routes: Routes = [
           import('./components-page/components-page.module').then((m) => m.ComponentsPageModule),
       },
       {
+        path: 'avatar',
+        loadChildren: () => import('./avatar-page/avatar-page.module').then((m) => m.AvatarPageModule),
+      },
+      {
         path: 'breadcrumbs',
         loadChildren: () =>
           import('./breadcrumbs-page/breadcrumbs-page.module').then((m) => m.BreadcrumbsPageModule),
