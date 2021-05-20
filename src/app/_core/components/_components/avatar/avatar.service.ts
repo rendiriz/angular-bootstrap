@@ -3,6 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 
 // PACKAGE
 import { css } from '@emotion/css';
+import { Color } from 'rendikit-theme';
 
 @Injectable()
 export class AvatarService {
@@ -14,7 +15,7 @@ export class AvatarService {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background-color: var(--bs-white);
+      background-color: ${Color.Normal('white')};
       align-items: stretch;
       box-sizing: content-box;
       cursor: inherit;
@@ -22,7 +23,7 @@ export class AvatarService {
       overflow: hidden;
       transform: translateZ(0px);
       transition: transform 200ms ease 0s, opacity 200ms ease 0s;
-      box-shadow: var(--bs-gray-200) 0px 0px 0px 1px;
+      box-shadow: ${Color.Normal('N200')} 0px 0px 0px 1px;
       border: none;
       padding: 0px;
       width: ${inputs.size}px;
@@ -41,7 +42,7 @@ export class AvatarService {
       ${inputs.src === '' &&
       css`
         span {
-          background-color: var(--bs-gray-200);
+          background-color: ${Color.Normal('N200')};
           width: 100%;
           height: 100%;
           display: block;
@@ -57,8 +58,8 @@ export class AvatarService {
               vertical-align: bottom;
               overflow: hidden;
               pointer-events: none;
-              color: var(--bs-white);
-              fill: var(--bs-gray-200);
+              color: ${Color.Normal('white')};
+              fill: ${Color.Normal('N200')};
               width: ${inputs.size}px;
               height: ${inputs.size}px;
             }

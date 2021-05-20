@@ -3,6 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 
 // PACKAGE
 import { css } from '@emotion/css';
+import { Color } from 'rendikit-theme';
 
 @Injectable()
 export class AvatarItemService {
@@ -36,7 +37,7 @@ export class AvatarItemService {
 
     const secondary = css`
       white-space: ${!inputs.isTruncation ? 'nowrap' : 'none'};
-      color: var(--bs-gray-600);
+      color: ${Color.Normal('N600')};
       font-size: 12px;
 
       ${inputs.isTruncation &&
