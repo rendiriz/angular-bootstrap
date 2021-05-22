@@ -16,6 +16,9 @@ import { AvatarItemComponent as CompAvatarItemComponent } from '@components/_com
 
 import { PageComponent as HeaderPageComponent } from '@components/header/page/page.component';
 
+// WEB COMPONENT
+import 'rendikit-avatar';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -51,5 +54,6 @@ import { PageComponent as HeaderPageComponent } from '@components/header/page/pa
     HeaderPageComponent,
   ],
   providers: [],
+  schemas: [],
 })
 export class SharedModule {}

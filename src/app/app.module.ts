@@ -1,4 +1,4 @@
-import { NgModule, Inject, LOCALE_ID, PLATFORM_ID, APP_ID } from '@angular/core';
+import { NgModule, Inject, LOCALE_ID, PLATFORM_ID, APP_ID, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule, BrowserTransferStateModule, Title } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
@@ -110,6 +110,7 @@ export function localizeLoaderFactory(
     SidebarService,
   ],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {
   constructor(@Inject(PLATFORM_ID) private platformId: object, @Inject(APP_ID) private appId: string) {

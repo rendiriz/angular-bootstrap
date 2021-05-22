@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
@@ -31,5 +31,6 @@ export const routes: Routes = [
     SharedModule,
     NgbDropdownModule,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AvatarPageModule {}
