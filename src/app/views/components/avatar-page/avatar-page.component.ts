@@ -37,6 +37,8 @@ export class AvatarPageComponent implements OnInit, OnChanges, OnDestroy, AfterV
   // Variable
   codeDefault = `<app-comp-avatar></app-comp-avatar>`;
 
+  codeDefaultWC = `<rendikit-avatar></rendikit-avatar>`;
+
   codeCircle = `<app-comp-avatar
   appearance="circle"
   src="assets/images/user-img.jpeg">
