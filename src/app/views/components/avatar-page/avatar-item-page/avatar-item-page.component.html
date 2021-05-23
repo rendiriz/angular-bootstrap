@@ -5,6 +5,21 @@
   <div class="main-page">
     <div class="container">
       <div class="my-5">
+        <h5 class="mb-3">Using Web Components</h5>
+        <div class="border border-gray-300 rounded-top p-4">
+          <rendikit-avatar-item primaryText="Mike Cannon-Brookes"
+                                secondaryText="CEO@angular-bootstrap.com"
+                                avatar="<rendikit-avatar size='48' />"></rendikit-avatar-item>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeDefaultWC }}
+        </textarea>
+      </div>
+
+      <hr>
+
+      <div class="my-5">
         <h3 class="mb-3">Text</h3>
         <h5 class="mb-3">Primary</h5>
         <div class="border border-gray-300 rounded-top p-4">
