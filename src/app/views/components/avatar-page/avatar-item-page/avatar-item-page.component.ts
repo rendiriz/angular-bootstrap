@@ -35,6 +35,12 @@ export class AvatarItemPageComponent implements OnInit, OnChanges, OnDestroy, Af
   breadcrumb!: any[];
 
   // Variable
+  codeDefaultWC = `<rendikit-avatar-item
+  primaryText="Mike Cannon-Brookes"
+  secondaryText="CEO@angular-bootstrap.com"
+  avatar="<rendikit-avatar size='48' />">
+</rendikit-avatar-item>`;
+
   codePrimary = `<app-comp-avatar-item
   primaryText="Mike Cannon-Brookes"
   [avatar]="{
