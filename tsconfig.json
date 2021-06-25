@@ -40,7 +40,8 @@
       "@data/*": ["src/assets/data/*"],
       "@json/*": ["src/assets/json/*"],
       "@locales/*": ["src/assets/locales/*"]
-    }
+    },
+    "allowSyntheticDefaultImports": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

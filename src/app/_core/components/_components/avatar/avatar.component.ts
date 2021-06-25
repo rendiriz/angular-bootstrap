@@ -18,8 +18,9 @@ import { GlobalService } from '@services';
 import { AvatarService } from './avatar.service';
 
 // PACKAGE
-import * as _ from 'lodash';
-import * as moment from 'moment';
+import isNil from 'lodash/isNil';
+import assign from 'lodash/assign';
+import moment from 'moment';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalizeRouterService } from '@gilsdav/ngx-translate-router';
 
@@ -74,16 +75,16 @@ export class AvatarComponent implements OnInit, OnChanges, OnDestroy, AfterViewI
   checkInputs(): any {
     const inputs = {};
 
-    if (!_.isNil(this.appearance)) {
-      _.assign(inputs, { appearance: this.appearance });
+    if (!isNil(this.appearance)) {
+      assign(inputs, { appearance: this.appearance });
     }
 
-    if (!_.isNil(this.size)) {
-      _.assign(inputs, { size: this.size });
+    if (!isNil(this.size)) {
+      assign(inputs, { size: this.size });
     }
 
-    if (!_.isNil(this.src)) {
-      _.assign(inputs, { src: this.src });
+    if (!isNil(this.src)) {
+      assign(inputs, { src: this.src });
     }
 
     return inputs;

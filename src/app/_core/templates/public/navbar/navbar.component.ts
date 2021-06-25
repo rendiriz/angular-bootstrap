@@ -15,8 +15,7 @@ import { environment } from 'src/environments/environment';
 import { GlobalService } from '@services';
 
 // PACKAGE
-import * as _ from 'lodash';
-import * as moment from 'moment';
+import moment from 'moment';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalizeRouterService } from '@gilsdav/ngx-translate-router';
 

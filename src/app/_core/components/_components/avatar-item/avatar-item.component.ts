@@ -24,8 +24,9 @@ import { AvatarItemService } from './avatar-item.service';
 import { AvatarComponent } from '@components/_components/avatar/avatar.component';
 
 // PACKAGE
-import * as _ from 'lodash';
-import * as moment from 'moment';
+import isNil from 'lodash/isNil';
+import assign from 'lodash/assign';
+import moment from 'moment';
 import { TranslateService } from '@ngx-translate/core';
 import { LocalizeRouterService } from '@gilsdav/ngx-translate-router';
 import { css } from '@emotion/css';
@@ -88,20 +89,20 @@ export class AvatarItemComponent implements OnInit, OnChanges, OnDestroy, AfterV
   checkInputs(): any {
     const inputs = {};
 
-    if (!_.isNil(this.avatar)) {
-      _.assign(inputs, { avatar: this.avatar });
+    if (!isNil(this.avatar)) {
+      assign(inputs, { avatar: this.avatar });
     }
 
-    if (!_.isNil(this.primaryText)) {
-      _.assign(inputs, { primaryText: this.primaryText });
+    if (!isNil(this.primaryText)) {
+      assign(inputs, { primaryText: this.primaryText });
     }
 
-    if (!_.isNil(this.secondaryText)) {
-      _.assign(inputs, { secondaryText: this.secondaryText });
+    if (!isNil(this.secondaryText)) {
+      assign(inputs, { secondaryText: this.secondaryText });
     }
 
-    if (!_.isNil(this.isTruncation)) {
-      _.assign(inputs, { isTruncation: this.isTruncation });
+    if (!isNil(this.isTruncation)) {
+      assign(inputs, { isTruncation: this.isTruncation });
     }
 
     return inputs;
