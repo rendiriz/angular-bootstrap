@@ -11,7 +11,7 @@
 
 // BODY
 $body-bg: #ffffff;
-$body-color:#424242;
+$body-color: #424242;
 
 // FONT
 .font-roboto {
@@ -93,7 +93,7 @@ $input-group-addon-border-color: $gray-400;
 @import 'assets/css/input-group.scss';
 
 // FORM LABEL
-$form-label-margin-bottom: .5rem;
+$form-label-margin-bottom: 0.5rem;
 $form-label-font-size: 15px;
 $form-label-color: $gray-800;
 
@@ -187,6 +187,6 @@ $list-group-active-bg: $green;
 @import 'assets/css/select.scss';
 
 // PACKAGES
-@import '~placeholder-loading/src/scss/placeholder-loading.scss';
-@import '~highlight.js/styles/github.css';
+// @import '~placeholder-loading/src/scss/placeholder-loading.scss';
+@import '~highlight.js/styles/github-dark.css';
 @import '~@ng-select/ng-select/themes/default.theme.css';

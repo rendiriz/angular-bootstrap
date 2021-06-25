@@ -42,8 +42,7 @@ import 'rendikit-avatar';
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    // PACKAGE
-    TranslateModule,
+    // PACKAGE    TranslateModule,
     LocalizeRouterModule,
     LoadingBarRouterModule,
     HighlightJsModule,

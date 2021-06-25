@@ -18,8 +18,9 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:browser",
           "options": {
+            "extraWebpackConfig": "webpack.config.js",
             "outputPath": "dist/angular-bootstrap/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -28,7 +29,10 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": [],
-            "allowedCommonJsDependencies": ["highlight.js"],
+            "allowedCommonJsDependencies": [
+              "highlight.js",
+              "lodash"
+            ],
             "vendorChunk": true,
             "extractLicenses": false,
             "buildOptimizer": false,
@@ -95,7 +99,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "angular-bootstrap:build"
           },
@@ -109,14 +113,16 @@
           }
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "builder": "ngx-build-plus:extract-i18n",
           "options": {
+            "extraWebpackConfig": "webpack.config.js",
             "browserTarget": "angular-bootstrap:build"
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "ngx-build-plus:karma",
           "options": {
+            "extraWebpackConfig": "webpack.config.js",
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
@@ -146,8 +152,9 @@
           }
         },
         "server": {
-          "builder": "@angular-devkit/build-angular:server",
+          "builder": "ngx-build-plus:server",
           "options": {
+            "extraWebpackConfig": "webpack.config.js",
             "outputPath": "dist/angular-bootstrap/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
