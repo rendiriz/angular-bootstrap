@@ -23,7 +23,7 @@ module.exports = {
               [
                 '@babel/plugin-proposal-decorators',
                 {
-                  "legacy": true,
+                  'legacy': true,
                 }
               ],
               '@babel/plugin-proposal-class-properties',
@@ -38,6 +38,6 @@ module.exports = {
     new LodashModuleReplacementPlugin,
     new MomentLocalesPlugin({
       localesToKeep: ['id'],
-  }),
+    }),
   ]
 };
