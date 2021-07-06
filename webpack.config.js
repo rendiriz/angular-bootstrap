@@ -31,6 +31,25 @@ module.exports = {
             ]
           }
         }
+      },
+      {
+        test: /\.(scss)$/,
+        use: [
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                ident: 'postcss',
+                syntax: 'postcss-scss',
+                plugins: () => {
+                  return [
+                    require('autoprefixer')
+                  ];
+                }
+              }
+            }
+          }
+        ]
       }
     ],
   },
