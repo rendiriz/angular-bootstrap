@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <a class="navbar-brand"
          [routerLink]="['/' | localize]">
-        Angular Bootstrap
+        <img src="assets/images/logo_light.png">
       </a>
       <div class="me-lg-2">
         <button class="toggler-navbar btn btn-outline-gray-300 me-2"
@@ -50,6 +50,18 @@
             </a>
           </li>
         </ul>
+        <div class="d-flex">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link"
+                 [routerLinkActive]="['active']"
+                 [routerLink]="['/admin' | localize]"
+                 (click)="isMenuCollapsed = true">
+                {{ 'admin' | translate }}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>

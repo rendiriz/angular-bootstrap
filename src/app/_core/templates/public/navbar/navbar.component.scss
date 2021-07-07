@@ -1,6 +1,8 @@
 .public-navbar {
   .navbar {
-    padding: 0.75rem 0;
+    .navbar-brand {
+      margin-right: 1rem;
+    }
   }
 
   @media (min-width: 992px) {

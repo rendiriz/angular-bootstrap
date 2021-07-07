@@ -182,6 +182,24 @@ $tooltip-padding-x: 12px;
 // LIST GROUP
 $list-group-active-bg: $green;
 
+// CARD
+$card-border-radius: 8px;
+
+// NAVBAR
+$navbar-padding-y: 0;
+$navbar-brand-font-size: 0;
+$navbar-brand-height: 1.125rem;
+$navbar-brand-padding-y: 1.125rem;
+$navbar-brand-margin-end: 0;
+
+.navbar {
+  .navbar-brand {
+    img {
+      height: 1.125rem;
+    }
+  }
+}
+
 // CORE
 @import '~bootstrap/scss/bootstrap';
 
@@ -190,6 +208,9 @@ $list-group-active-bg: $green;
 @import 'assets/css/sizing.scss';
 @import 'assets/css/text-truncate.scss';
 @import 'assets/css/select.scss';
+
+// ADMIN
+@import 'assets/css/admin.scss';
 
 // PACKAGES
 // @import '~placeholder-loading/src/scss/placeholder-loading.scss';

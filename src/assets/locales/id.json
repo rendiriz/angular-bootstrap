@@ -21,6 +21,7 @@
   "ROUTES.tooltip": "tooltip",
   "ROUTES.examples": "examples",
   "ROUTES.navbar": "navbar",
+  "ROUTES.admin": "admin",
   "home": "Home",
   "foundations": "Foundations",
   "color": "Color",
@@ -42,6 +43,7 @@
   "tooltip": "Tooltip",
   "examples": "Examples",
   "navbar": "Navbar",
+  "admin": "Admin",
   "seo": {
     "home-page": {
       "title": "Home",
@@ -126,6 +128,10 @@
     "navbar-page": {
       "title": "Navbar",
       "description": "Navbar."
+    },
+    "admin-page": {
+      "title": "Admin",
+      "description": "Admin."
     }
   }
 }
