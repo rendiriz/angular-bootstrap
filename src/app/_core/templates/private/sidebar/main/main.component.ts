@@ -7,21 +7,33 @@ import {
   OnInit,
   QueryList,
   ViewChildren,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
 } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 // SERVICE
 import { GlobalService, SidebarService } from '@services/private';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: '[app-private-sidebar-main]',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class: 'sidebar sidebar-dark sidebar-main sidebar-expand-lg',
     '(mouseenter)': 'onMouseEnter()',
     '(mouseleave)': 'onMouseLeave()',
   },
+  animations: [
+    trigger('slideUpDown', [
+      state('0', style({ 'max-height': '0px', opacity: 0, display: 'none' })),
+      state('1', style({ 'max-height': '*', opacity: 1, display: 'block' })),
+      transition(':enter', animate('250ms ease-in-out')),
+      transition('* => *', animate('250ms ease-in-out')),
+    ]),
+  ],
 })
 export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
   @ViewChildren('navSidebar') navSidebarEl!: QueryList<ElementRef>;
@@ -35,14 +47,18 @@ export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
   menu!: any[];
   menuEmitter$ = new BehaviorSubject<any[]>(this.menu);
 
-  constructor(private globalService: GlobalService, private sidebarService: SidebarService) {
+  constructor(
+    private cdRef: ChangeDetectorRef,
+    private globalService: GlobalService,
+    private sidebarService: SidebarService
+  ) {
     this.globalService.currentToggleMobileExpanded.subscribe((current) => {
       this.isMobileExpanded = current;
     });
 
     this.sidebarService.currentSidebar.subscribe((current) => {
-      this.menu = current;
-      this.menuEmitter$.next(current);
+      this.menu = current.map((res: any) => ({ ...res, slide: false }));
+      this.menuEmitter$.next(this.menu);
     });
   }
 
@@ -102,13 +118,18 @@ export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
           item.querySelector('.nav-item>.nav-link:not(.disabled)').addEventListener('click', (e: any) => {
             e.preventDefault();
 
+            const dataset = group.dataset['submenuTitle'];
+            const objIndex = this.menu.findIndex((res: any) => res.name === dataset);
+
             if (item.classList.contains('nav-item-open')) {
               item.classList.remove('nav-item-open');
-              group.style.display = 'none';
+              this.menu[objIndex].slide = false;
             } else {
               item.classList.add('nav-item-open');
-              group.style.display = 'block';
+              this.menu[objIndex].slide = true;
             }
+
+            this.menuEmitter$.next(this.menu);
           });
         }
       });
