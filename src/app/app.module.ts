@@ -12,6 +12,10 @@ import localeId from '@angular/common/locales/id';
 
 // SERVICE
 import { GlobalService, SidebarService } from '@services';
+import {
+  GlobalService as PrivateGlobalService,
+  SidebarService as PrivateSidebarService,
+} from '@services/private';
 
 // INTERCEPTOR
 import { TransferStateInterceptor } from '@interceptors';
@@ -30,6 +34,11 @@ import { PageComponent as PublicPageComponent } from '@templates/public/containe
 import { NavbarComponent as PublicNavbarComponent } from '@templates/public/navbar/navbar.component';
 import { SidebarComponent as PublicSidebarComponent } from '@templates/public/sidebar/sidebar.component';
 import { FooterComponent as PublicFooterComponent } from '@templates/public/footer/footer.component';
+
+// COMPONENT (PRIVATE)
+import { AdminComponent as PrivateAdminComponent } from '@templates/private/container/admin/admin.component';
+import { NavbarComponent as PrivateNavbarComponent } from '@templates/private/navbar/navbar.component';
+import { MainComponent as PrivateSidebarMainComponent } from '@templates/private/sidebar/main/main.component';
 
 // LOCALIZE
 import { TranslateService } from '@ngx-translate/core';
@@ -67,6 +76,9 @@ export function localizeLoaderFactory(
     PublicNavbarComponent,
     PublicSidebarComponent,
     PublicFooterComponent,
+    PrivateAdminComponent,
+    PrivateNavbarComponent,
+    PrivateSidebarMainComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'angular-bootstrap' }),
@@ -108,6 +120,8 @@ export function localizeLoaderFactory(
     Title,
     GlobalService,
     SidebarService,
+    PrivateGlobalService,
+    PrivateSidebarService,
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

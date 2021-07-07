@@ -1,0 +1,30 @@
+.page-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+
+  .content-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+    min-width: 0;
+  }
+
+  @media (min-width: 992px) {
+    .sidebar-expand-lg {
+      &.sidebar-main-resized {
+        + * {
+          margin-left: 3.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,39 @@
 .hljs {
   padding: 25px;
 }
+
+.wmin-0 {
+  min-width: 0 !important;
+}
+
+.btn-icon {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+  width: calc(2.25rem + 2px);
+  height: calc(2.25rem + 2px);
+
+  > i {
+    position: static;
+    min-width: 1rem;
+  }
+
+  & input[type='checkbox'],
+  input[type='radio'] {
+    display: block;
+  }
+
+  &.btn-sm {
+    width: calc(2rem + 2px);
+    height: calc(2rem + 2px);
+  }
+
+  &.btn-lg {
+    width: calc(2.5rem + 2px);
+    height: calc(2.5rem + 2px);
+  }
+}

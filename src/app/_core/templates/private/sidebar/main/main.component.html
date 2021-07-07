@@ -1,0 +1,60 @@
+<div class="navbar bg-blue-gray-900 px-3">
+  <div class="navbar-brand flex-fill wmin-0">
+    <a href="#"
+       class="d-inline-block">
+      <img src="assets/images/logo_light.png"
+           class="sidebar-resize-hide">
+      <img src="assets/images/logo_icon_light.png"
+           class="sidebar-resize-show">
+    </a>
+  </div>
+  <ul class="navbar-nav align-self-center ml-auto sidebar-resize-hide">
+    <li class="nav-item dropdown">
+      <button type="button"
+              class="btn btn-transparent text-white border-transparent btn-icon rounded-pill btn-sm d-none d-lg-inline-flex"
+              (click)="isMainResized = !isMainResized">
+        <i class="fas fa-exchange-alt"></i>
+      </button>
+      <button type="button"
+              class="btn btn-transparent text-white border-transparent btn-icon rounded-pill btn-sm d-lg-none"
+              (click)="toggleMobileExpanded()">
+        <i class="fas fa-times"></i>
+      </button>
+    </li>
+  </ul>
+</div>
+<div class="sidebar-content">
+  <div class="sidebar-section">
+    <ul #navSidebar
+        class="nav nav-sidebar"
+        data-nav-type="accordion">
+      <li #navItem
+          *ngFor="let item of menuEmitter$ | async"
+          class="nav-item"
+          [ngClass]="[item.children ? 'nav-item-submenu' : '']">
+        <a class="nav-link"
+           [routerLink]="item.link ? [item.link | localize] : []">
+          <i class="fas fa-fw"
+             [ngClass]="['fa-' + item.icon]"></i>
+          <span>
+            {{ item.name }}
+          </span>
+        </a>
+        <ng-container *ngIf="item.children">
+          <ul class="nav nav-group-sub"
+              [attr.data-submenu-title]="item.name"
+              [style.display]="'none'">
+            <li *ngFor="let child of item.children"
+                class="nav-item">
+              <a class="nav-link"
+                 [routerLink]="[child.link | localize]"
+                 [routerLinkActive]="['active']">
+                {{ child.name }}
+              </a>
+            </li>
+          </ul>
+        </ng-container>
+      </li>
+    </ul>
+  </div>
+</div>

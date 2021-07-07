@@ -4,6 +4,9 @@ import { Routes } from '@angular/router';
 import { HomeComponent as PublicHomeComponent } from '@templates/public/container/home/home.component';
 import { PageComponent as PublicPageComponent } from '@templates/public/container/page/page.component';
 
+// COMPONENT (PRIVATE)
+import { AdminComponent as PrivateAdminComponent } from '@templates/private/container/admin/admin.component';
+
 export const AppRoutingModule: Routes = [
   {
     path: '',
@@ -40,6 +43,19 @@ export const AppRoutingModule: Routes = [
       {
         path: 'examples',
         loadChildren: () => import('./views/examples/examples.module').then((m) => m.ExamplesModule),
+      },
+    ],
+  },
+  {
+    path: '',
+    component: PrivateAdminComponent,
+    data: {
+      discriminantPathKey: 'ADMINPATH',
+    },
+    children: [
+      {
+        path: 'admin',
+        loadChildren: () => import('./views/admin/admin.module').then((m) => m.AdminModule),
       },
     ],
   },
