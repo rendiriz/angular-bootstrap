@@ -40,6 +40,10 @@ const routes: Routes = [
           import('./dropdown-menu-page/dropdown-menu-page.module').then((m) => m.DropdownMenuPageModule),
       },
       {
+        path: 'modal',
+        loadChildren: () => import('./modal-page/modal-page.module').then((m) => m.ModalPageModule),
+      },
+      {
         path: 'pagination',
         loadChildren: () =>
           import('./pagination-page/pagination-page.module').then((m) => m.PaginationPageModule),

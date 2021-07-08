@@ -1,0 +1,19 @@
+<section class="modal-page">
+  <app-header-page [label]="label"
+                   [description]="description"></app-header-page>
+
+  <div class="main-page">
+    <div class="container">
+      <div class="my-5">
+        <div class="border border-gray-300 rounded-top p-4">
+          <button class="btn btn-lg btn-green"
+                  (click)="open()">Launch demo modal</button>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeBreadcrumb }}
+        </textarea>
+      </div>
+    </div>
+  </div>
+</section>
