@@ -38,6 +38,7 @@ export class SidebarService {
       { name: 'button', link: '/components/button' },
       { name: 'checkbox', link: '/components/checkbox' },
       { name: 'dropdown-menu', link: '/components/dropdown-menu' },
+      { name: 'modal', link: '/components/modal' },
       { name: 'pagination', link: '/components/pagination' },
       { name: 'radio', link: '/components/radio' },
       { name: 'section-message', link: '/components/section-message' },

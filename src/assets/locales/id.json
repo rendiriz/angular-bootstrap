@@ -11,6 +11,7 @@
   "ROUTES.button": "button",
   "ROUTES.checkbox": "checkbox",
   "ROUTES.dropdown-menu": "dropdown-menu",
+  "ROUTES.modal": "modal",
   "ROUTES.pagination": "pagination",
   "ROUTES.radio": "radio",
   "ROUTES.section-message": "section-message",
@@ -33,6 +34,7 @@
   "button": "Button",
   "checkbox": "Checkbox",
   "dropdown-menu": "Dropdown Menu",
+  "modal": "Modal",
   "pagination": "Pagination",
   "radio": "Radio",
   "section-message": "Section Message",
@@ -88,6 +90,10 @@
     "dropdown-menu-page": {
       "title": "Dropdown Menu",
       "description": "A dropdown menu displays a list of actions or options to a user."
+    },
+    "modal-page": {
+      "title": "Modal",
+      "description": "A modal dialog displays content that requires user interaction, in a layer above the page."
     },
     "pagination-page": {
       "title": "Pagination",

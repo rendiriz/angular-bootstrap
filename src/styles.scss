@@ -200,6 +200,25 @@ $navbar-brand-margin-end: 0;
   }
 }
 
+// MODAL
+$modal-content-border-radius: 8px;
+
+.modal {
+  .modal-header {
+    padding: 8px 1rem;
+    border-bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .modal-footer {
+    background-color: $gray-50;
+    border-top: 0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
+
 // CORE
 @import '~bootstrap/scss/bootstrap';
 
