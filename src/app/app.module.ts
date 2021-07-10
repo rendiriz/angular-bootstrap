@@ -10,6 +10,9 @@ import { environment } from '../environments/environment';
 import { Location, registerLocaleData } from '@angular/common';
 import localeId from '@angular/common/locales/id';
 
+// STORE
+import { NgrxModule } from '@store/ngrx.module';
+
 // SERVICE
 import { GlobalService, SidebarService } from '@services';
 import {
@@ -104,6 +107,7 @@ export function localizeLoaderFactory(
       },
       initialNavigation: true,
     }),
+    NgrxModule,
     SharedModule,
     NgbModule,
   ],

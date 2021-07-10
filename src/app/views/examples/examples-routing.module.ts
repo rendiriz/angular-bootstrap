@@ -20,6 +20,10 @@ const routes: Routes = [
         path: 'navbar',
         loadChildren: () => import('./navbar-page/navbar-page.module').then((m) => m.NavbarPageModule),
       },
+      {
+        path: 'ngrx',
+        loadChildren: () => import('./ngrx-page/ngrx-page.module').then((m) => m.NgrxPageModule),
+      },
     ],
   },
 ];

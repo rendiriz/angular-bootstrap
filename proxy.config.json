@@ -1,0 +1,11 @@
+{
+  "/api-backend": {
+    "target": "http://localhost:3000/v1/",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api-backend": ""
+    }
+  }
+}
