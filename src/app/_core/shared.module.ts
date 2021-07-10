@@ -9,6 +9,7 @@ import { LocalizeRouterModule } from '@gilsdav/ngx-translate-router';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { HighlightJsModule } from 'ngx-highlight-js';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 // COMPONENT
 import { AvatarComponent as CompAvatarComponent } from '@components/_components/avatar/avatar.component';
@@ -31,6 +32,7 @@ import 'rendikit-avatar';
     LoadingBarRouterModule,
     HighlightJsModule,
     NgSelectModule,
+    NgxSkeletonLoaderModule,
   ],
   declarations: [
     // COMPONENT
@@ -42,11 +44,13 @@ import 'rendikit-avatar';
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    // PACKAGE    TranslateModule,
+    // PACKAGE
+    TranslateModule,
     LocalizeRouterModule,
     LoadingBarRouterModule,
     HighlightJsModule,
     NgSelectModule,
+    NgxSkeletonLoaderModule,
     // COMPONENT
     CompAvatarComponent,
     CompAvatarItemComponent,

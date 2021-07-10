@@ -53,7 +53,10 @@ export class SidebarService {
   }
 
   getExamples(): any {
-    const menu = [{ name: 'navbar', link: '/examples/navbar' }];
+    const menu = [
+      { name: 'navbar', link: '/examples/navbar' },
+      { name: 'ngrx', link: '/examples/ngrx' },
+    ];
 
     return menu;
   }

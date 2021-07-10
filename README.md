@@ -25,6 +25,7 @@ Run `npm run build:dev` for a dev server & `npm run build:prod` for a prod serve
 - Button
 - Checkbox
 - Dropdown Menu
+- Modal
 - Pagination
 - Radio
 - Section Message
