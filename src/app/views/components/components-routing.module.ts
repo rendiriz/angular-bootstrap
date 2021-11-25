@@ -31,6 +31,10 @@ const routes: Routes = [
         loadChildren: () => import('./button-page/button-page.module').then((m) => m.ButtonPageModule),
       },
       {
+        path: 'chart',
+        loadChildren: () => import('./chart-page/chart-page.module').then((m) => m.ChartPageModule),
+      },
+      {
         path: 'checkbox',
         loadChildren: () => import('./checkbox-page/checkbox-page.module').then((m) => m.CheckboxPageModule),
       },

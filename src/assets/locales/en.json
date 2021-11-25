@@ -25,6 +25,10 @@
     "components-page": {
       "title": "Components",
       "description": "Components Description"
+    },
+    "chart-page": {
+      "title": "Chart",
+      "description": "Chart Description"
     }
   }
 }

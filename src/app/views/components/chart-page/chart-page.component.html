@@ -1,0 +1,77 @@
+<section class="checkbox-page">
+  <app-header-page [label]="label"
+                   [description]="description"></app-header-page>
+
+  <div class="main-page">
+    <div class="container">
+      <div class="my-5">
+        <h2 class="mb-3">Bar Horizontal Chart</h2>
+        <div class="border border-gray-300 rounded-top p-4">
+          <app-comp-chart-bar-horizontal
+            [filters]="filters"
+            [chartData]="chartDataBarHorizontal"></app-comp-chart-bar-horizontal>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeBarHorizontalChart }}
+        </textarea>
+      </div>
+
+      <hr>
+      <div class="my-5">
+        <h2 class="mb-3">Bar Vertical Chart</h2>
+        <div class="border border-gray-300 rounded-top p-4">
+          <app-comp-chart-bar-vertical
+            [filters]="filters"
+            [chartData]="chartDataBarVertical"></app-comp-chart-bar-vertical>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeBarVerticalChart }}
+        </textarea>
+      </div>
+
+      <hr>
+      <div class="my-5">
+        <h2 class="mb-3">Line Chart</h2>
+        <div class="border border-gray-300 rounded-top p-4">
+          <app-comp-chart-line
+            [filters]="filters"
+            [chartData]="chartDataLine"></app-comp-chart-line>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeLineChart }}
+        </textarea>
+      </div>
+
+      <hr>
+      <div class="my-5">
+        <h2 class="mb-3">Doughnut Chart</h2>
+        <div class="border border-gray-300 rounded-top p-4">
+          <app-comp-chart-doughnut
+            [filters]="filters"
+            [chartData]="chartDataDoughnut"></app-comp-chart-doughnut>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codeDoughnutChart }}
+        </textarea>
+      </div>
+
+      <hr>
+      <div class="my-5">
+        <h2 class="mb-3">Pie Chart</h2>
+        <div class="border border-gray-300 rounded-top p-4">
+          <app-comp-chart-pie
+            [filters]="filters"
+            [chartData]="chartDataPie"></app-comp-chart-pie>
+        </div>
+        <textarea highlight-js
+                  [lang]="'html'">
+          {{ codePieChart }}
+        </textarea>
+      </div>
+    </div>
+  </div>
+</section>

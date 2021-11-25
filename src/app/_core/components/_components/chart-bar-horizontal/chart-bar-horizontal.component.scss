@@ -1,0 +1,45 @@
+app-comp-chart-bar-horizontal {
+  position: relative;
+  height: 500px;
+
+  .loading-container {
+    width: 100%;
+    height: 350px;
+
+    .skeleton {
+      height: 100%;
+    }
+  }
+
+  .chart-bar-horizontal {
+    height: inherit;
+    width: inherit;
+    position: relative;
+
+    svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .axis--x {
+      path {
+        display: none;
+      }
+
+      .tick {
+        line {
+          stroke: #f5f5f5;
+        }
+      }
+    }
+
+    .axis--y.axis-label path {
+      display: none;
+    }
+
+    text {
+      font: 11px sans-serif;
+    }
+  }
+}

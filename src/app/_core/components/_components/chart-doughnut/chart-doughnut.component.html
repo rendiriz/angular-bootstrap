@@ -1,0 +1,16 @@
+<div #chartDoughnut class="chart-doughnut" (window:resize)="onResize($event)">
+    <div *ngIf="loading" class="d-flex justify-content-center loading-container">
+        <div class="skeleton skeleton-chart-columns"
+          style="
+            --cols: 7;
+            --col-w: 50px;
+            --col-gap: 12px;
+            --chart-h: 350px;
+            --bg: #f5f5f5;
+            --shine: #fff;"></div>
+    </div>
+</div>
+<div class="legend-container legend-doughnut d-flex justify-content-center align-items-center flex-wrap"></div>
+<div *ngIf="!loading" class="w-100 d-flex justify-content-center align-items-center flex-wrap mt-2">
+  <button class="btn btn-outline-secondary btn-sm" role="button" id="btn-doughnut-more" type="button" (click)="toggleLegend($event)">Tampilkan lebih banyak</button>
+</div>
