@@ -1,0 +1,13 @@
+<div #chartLine class="chart-line" (window:resize)="onResize($event)">
+    <div *ngIf="loading" class="d-flex justify-content-center loading-container">
+        <div class="skeleton skeleton-chart-columns"
+          style="
+            --cols: 7;
+            --col-w: 50px;
+            --col-gap: 12px;
+            --chart-h: 350px;
+            --bg: #f5f5f5;
+            --shine: #fff;"></div>
+    </div>
+</div>
+<div class="legend-container legend-line d-flex justify-content-center align-items-center flex-wrap"></div>

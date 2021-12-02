@@ -37,3 +37,49 @@
     height: calc(2.5rem + 2px);
   }
 }
+
+// Chart Tooltip
+div.chart-tooltip {
+  position: absolute;
+  z-index: 999;
+  text-align: center;
+  padding: 10px 15px;
+  font: 12px sans-serif;
+  background: var(--bs-gray-900);
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  pointer-events: none;
+  box-shadow: 0 20px 26px -8px rgba(54, 53, 53, 0.16);
+  -webkit-box-shadow: 0 20px 26px -8px rgba(54, 53, 53, 0.16);
+  -moz-box-shadow: 0 20px 26px -8px rgba(54, 53, 53, 0.16);
+
+  .tooltip-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}
+
+// Legend container
+.legend-container {
+  position: relative;
+
+  .legend-item {
+    transition: .1s ease-in-out;
+    padding: 0 7px;
+    border-radius: 5px;
+  }
+
+  .legend-item:hover {
+    cursor: pointer;
+    background: #f5f5f5;
+  }
+
+  .legend-item:not(.active) {
+    span {
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}

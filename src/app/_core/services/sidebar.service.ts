@@ -36,6 +36,7 @@ export class SidebarService {
       //   children: [{ name: 'button-group', link: '/button-group' }],
       // },
       { name: 'button', link: '/components/button' },
+      { name: 'chart', link: '/components/chart' },
       { name: 'checkbox', link: '/components/checkbox' },
       { name: 'dropdown-menu', link: '/components/dropdown-menu' },
       { name: 'modal', link: '/components/modal' },

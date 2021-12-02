@@ -9,6 +9,7 @@
   "ROUTES.avatar-item": "avatar-item",
   "ROUTES.breadcrumbs": "breadcrumbs",
   "ROUTES.button": "button",
+  "ROUTES.chart": "chart",
   "ROUTES.checkbox": "checkbox",
   "ROUTES.dropdown-menu": "dropdown-menu",
   "ROUTES.modal": "modal",
@@ -33,6 +34,7 @@
   "avatar-item": "Avatar Item",
   "breadcrumbs": "Breadcrumbs",
   "button": "Button",
+  "chart": "Chart",
   "checkbox": "Checkbox",
   "dropdown-menu": "Dropdown Menu",
   "modal": "Modal",
@@ -84,6 +86,10 @@
     "button-page": {
       "title": "Button",
       "description": "A button triggers an event or action. They let users know what will happen next."
+    },
+    "chart-page": {
+      "title": "Chart",
+      "description": "A Chart is a visual representation of data row."
     },
     "checkbox-page": {
       "title": "Checkbox",
